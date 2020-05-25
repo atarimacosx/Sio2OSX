@@ -75,70 +75,33 @@ NSImage *disketteImage;
 	[[cassNameField window] setExcludedFromWindowsMenu:YES];
 	[[cassNameField window] setMenu:nil];
 
-	off810Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/atari810off.tiff");    
-	[off810Image initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
-	empty810Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/atari810empty.tiff");    
-	[empty810Image initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
-	closed810Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/atari810closed.tiff");    
-	[closed810Image initWithContentsOfFile:[NSString stringWithCString:filename]];
+    off810Image = [NSImage imageNamed:@"atari810off"];
+    empty810Image = [NSImage imageNamed:@"atari810emtpy"];
+    closed810Image = [NSImage imageNamed:@"atari810closed"];
+    read810Image = [NSImage imageNamed:@"atari810read"];
+    write810Image = [NSImage imageNamed:@"atari810write"];
 
-	read810Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/atari810read.tiff");    
-	[read810Image initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
-	write810Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/atari810write.tiff");    
-	[write810Image initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
-	lockImage = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/lock.tiff");    
-	[lockImage initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
-	lockoffImage = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/lockoff.tiff");    
-	[lockoffImage initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
-	epsonImage = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/epson.tiff");    
-	[epsonImage initWithContentsOfFile:[NSString stringWithCString:filename]];
-		
-	atari825Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/atari825.tiff");    
-	[atari825Image initWithContentsOfFile:[NSString stringWithCString:filename]];
-		
-	atari1020Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/atari1020.tiff");    
-	[atari1020Image initWithContentsOfFile:[NSString stringWithCString:filename]];
+    lockImage = [NSImage imageNamed:@"lock"];
+    
+    lockoffImage = [NSImage alloc];
+    [lockoffImage initWithSize: NSMakeSize(11.0,14.0)];
+    [lockoffImage setBackgroundColor:[NSColor textBackgroundColor]];
 
-	textImage = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/text.tiff");    
-	[textImage initWithContentsOfFile:[NSString stringWithCString:filename]];
-		
-	on410Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/cassetteon.tiff");    
-	[on410Image initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
-	off410Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/cassetteoff.tiff");    
-	[off410Image initWithContentsOfFile:[NSString stringWithCString:filename]];
+    epsonImage = [NSImage imageNamed:@"epson"];
+    atari825Image = [NSImage imageNamed:@"atari825"];
+    atari1020Image = [NSImage imageNamed:@"atari1020"];
+    textImage = [NSImage imageNamed:@"text"];
+
+    on410Image = [NSImage imageNamed:@"cassetteon"];
+    off410Image = [NSImage imageNamed:@"cassetteoff"];
 
 	disketteImage = [NSImage alloc];
     strcpy(filename, "Contents/Resources/diskette.tiff");    
-	[disketteImage initWithContentsOfFile:[NSString stringWithCString:filename]];
-			
-	on850Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/850on.tiff");    
-	[on850Image initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
-	off850Image = [NSImage alloc];
-    strcpy(filename, "Contents/Resources/850off.tiff");    
-	[off850Image initWithContentsOfFile:[NSString stringWithCString:filename]];
-	
+    disketteImage = [NSImage imageNamed:@"diskette"];
+
+    on850Image = [NSImage imageNamed:@"850on"];
+    off850Image = [NSImage imageNamed:@"850off"];
+
 	cassPresent = NO;
 	cassPlaying = NO;
 	}

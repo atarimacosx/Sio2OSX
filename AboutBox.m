@@ -41,7 +41,7 @@ static AboutBox *sharedInstance = nil;
     {
         NSWindow *theWindow;
         NSString *creditsPath;
-        NSAttributedString *creditsString;
+        NSMutableAttributedString *creditsString;
         NSString *appName;
         NSString *versionString;
         NSDictionary *infoDictionary;
@@ -81,8 +81,12 @@ static AboutBox *sharedInstance = nil;
         creditsPath = [[NSBundle mainBundle] pathForResource:@"Credits" 
                                              ofType:@"html"];
 
-        creditsString = [[NSAttributedString alloc] initWithPath:creditsPath 
-                                                    documentAttributes:nil];
+        creditsString = [[NSMutableAttributedString alloc] initWithPath:creditsPath
+        documentAttributes:nil];
+        
+        [creditsString addAttribute:NSForegroundColorAttributeName
+               value: NSColor.controlTextColor
+                               range: NSMakeRange( 0, creditsString.length-1)];
 
         [creditsField replaceCharactersInRange:NSMakeRange( 0, 0 ) 
                       withRTF:[creditsString RTFFromRange:
