@@ -1174,16 +1174,7 @@ static Preferences *sharedInstance = nil;
 
 - (BOOL)checkRegistration
 {
-	NSString *config = @"SUPPLIERID:markgrebe%E:1%N:5%H:1%COMBO:nn%SDLGTH:15%CONSTLGTH:2%CONSTVAL:S1%SEQL:2%ALTTEXT:Contact markgrebe@kagi.com to obtain your registration code%SCRMBL:U3,,U12,,C1,,D1,,S0,,U4,,U6,,U11,,C0,,S1,,U7,,U5,,U1,,D0,,D2,,U10,,U8,,U0,,U13,,U9,,U2,,U14,,D3,,%ASCDIG:2%MATH:4A,,2S,,4A,,1A,,R,,1M,,2S,,R,,3A,,R,,1M,,3A,,2S,,8S,,2A,,1M,,2S,,6A,,R,,4S,,1M,,3A,,7S,,%BASE:30%BASEMAP:TE7D95GK2FWXHUQLNY3JA8P4C1RM60%REGFRMT:SIO-^#####-#####-#####-#####-#####-#####-##[-#]";
-	KagiGenericACG *acg = [KagiGenericACG acgWithConfigurationString: config];
-	BOOL result = [acg regCode:[displayedValues objectForKey:UserKey] matchesName:[displayedValues objectForKey:UserName] email:@"" hotSync:@""];
-
-	if(result) {
-	   [self commitDisplayedValues]; 
-       return YES;
-	   }
-	else 
-	   return NO;
+    return YES;
 }
 
 - (NSString *)getUserName

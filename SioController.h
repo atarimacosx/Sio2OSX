@@ -6,9 +6,9 @@
 */
 
 #import <Cocoa/Cocoa.h>
-#import <LedUpdate.h>
-#import <CassStatusUpdate.h>
-#import <CassInfoUpdate.h>
+#import "LedUpdate.h"
+#import "CassStatusUpdate.h"
+#import "CassInfoUpdate.h"
 #import <termios.h>
 #import <sys/types.h>
 #import <sys/stat.h>
@@ -255,7 +255,7 @@ typedef struct SIO_PREF_RET {
 - (void) updatePreferences;
 - (kern_return_t) findModems:(io_iterator_t *) matchingServices;
 - (int) getModemPaths:(io_iterator_t )serialPortIterator; 
-- (int) openSerialPort:(const char *) bsdPath:(int)initialBaud;
+- (int) openSerialPort:(const char *)bbsdPath:(int)initialBaud;
 - (void) closeSerialPort: (int) descriptor: (BOOL) reset;
 - (void) setSerialPortSpeed: (int) fileDescriptor : (int) speed;
 - (UInt8) checksum: (UInt8 *) buffer: (UInt32) count;

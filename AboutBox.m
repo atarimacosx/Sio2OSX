@@ -101,12 +101,8 @@ static AboutBox *sharedInstance = nil;
     }
 	
 	// Setup the registration info
-	userName = [[Preferences sharedInstance] getUserName];
-	if ([userName isEqualTo:@""])
-		[registrationField setStringValue:@"Unregistered"];
-	else
-		[registrationField setStringValue:[@"Registered To: " stringByAppendingString:userName]];
-    
+    [registrationField setStringValue:@""];
+
     if (![[appNameField window] isVisible])
     {
         currentPosition = 0;

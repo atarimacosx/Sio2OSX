@@ -11,9 +11,9 @@
 */
 
 #import <Cocoa/Cocoa.h>
-#import <LedUpdate.h>
-#import <CassInfoUpdate.h>
-#import <CassStatusUpdate.h>
+#import "LedUpdate.h"
+#import "CassInfoUpdate.h"
+#import "CassStatusUpdate.h"
 
 @interface MediaManager : NSObject
 {

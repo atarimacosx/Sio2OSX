@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,16 +20,20 @@
 		2D2720F50901A9C500DB4B91 /* cassetteoff.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720F30901A9C500DB4B91 /* cassetteoff.tiff */; };
 		2D2720F60901A9C500DB4B91 /* cassetteon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720F40901A9C500DB4B91 /* cassetteon.tiff */; };
 		2D5B2ABA08F4C3DA00D1625E /* AboutBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B2AB908F4C3DA00D1625E /* AboutBox.m */; };
-		2D5B2ABD08F4C3F100D1625E /* AboutBox.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B2ABB08F4C3F100D1625E /* AboutBox.nib */; };
 		2D5B2ABE08F4C3F100D1625E /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B2ABC08F4C3F100D1625E /* Credits.html */; };
+		2D5D5695247C4C9800F6FEEF /* AboutBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D5692247C4C9800F6FEEF /* AboutBox.xib */; };
+		2D5D5696247C4C9800F6FEEF /* MediaManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D5693247C4C9800F6FEEF /* MediaManager.xib */; };
+		2D5D5697247C4C9800F6FEEF /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D5694247C4C9800F6FEEF /* Preferences.xib */; };
+		2D5D569A247C4CC200F6FEEF /* SioMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D5698247C4CC200F6FEEF /* SioMain.xib */; };
 		2D69B7C20C6420FE0035D6DD /* diskette.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2D69B7C10C6420FE0035D6DD /* diskette.tiff */; };
 		2D6DCEEF08FCCDFC00FDD389 /* Sio2OSX.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DCEEE08FCCDFC00FDD389 /* Sio2OSX.icns */; };
 		2DB5AE160C94DEBF00D51514 /* 850off.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5AE140C94DEBF00D51514 /* 850off.tiff */; };
 		2DB5AE170C94DEBF00D51514 /* 850on.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5AE150C94DEBF00D51514 /* 850on.tiff */; };
+		2DB776B8247C330700646F3F /* PrintOutputConfirm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB776B6247C330700646F3F /* PrintOutputConfirm.xib */; };
+		2DB776B9247C330700646F3F /* PrintOutput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB776B7247C330700646F3F /* PrintOutput.xib */; };
 		2DD755AA09131C56002466D0 /* CassInfoUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD755A909131C56002466D0 /* CassInfoUpdate.m */; };
 		2DD755BA09131D4E002466D0 /* CassStatusUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD755B909131D4E002466D0 /* CassStatusUpdate.m */; };
 		2DDA45FE0912749400167297 /* LedUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA45FD0912749400167297 /* LedUpdate.m */; };
-		2DE6BF4109C3E63A005748C2 /* Sio2OSX.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */; };
 		2DE934CD08F3728000027E7F /* Atari800DriveTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934AC08F3728000027E7F /* Atari800DriveTextField.m */; };
 		2DE934CE08F3728000027E7F /* Atari800ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934AE08F3728000027E7F /* Atari800ImageView.m */; };
 		2DE934CF08F3728000027E7F /* Atari800MediaWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934B008F3728000027E7F /* Atari800MediaWindow.m */; };
@@ -57,17 +61,10 @@
 		2DE934FF08F372F600027E7F /* Fuji.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934ED08F372F600027E7F /* Fuji.icns */; };
 		2DE9350008F372F600027E7F /* lock.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934EE08F372F600027E7F /* lock.tiff */; };
 		2DE9350108F372F600027E7F /* lockoff.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934EF08F372F600027E7F /* lockoff.tiff */; };
-		2DE9350208F372F600027E7F /* MediaManager.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934F008F372F600027E7F /* MediaManager.nib */; };
-		2DE9350308F372F600027E7F /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934F108F372F600027E7F /* Preferences.nib */; };
-		2DE9350408F372F600027E7F /* PrintOutput.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934F208F372F600027E7F /* PrintOutput.nib */; };
-		2DE9350608F372F600027E7F /* PrintOutputConfirm.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934F408F372F600027E7F /* PrintOutputConfirm.nib */; };
 		2DE9350A08F3731300027E7F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE9350908F3731300027E7F /* IOKit.framework */; };
 		2DEB621108F7484700B82E6E /* FujiCable.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2DEB621008F7484700B82E6E /* FujiCable.icns */; };
 		2DF96661091C5536002D9829 /* ACGBigNum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF9665F091C5536002D9829 /* ACGBigNum.h */; };
 		2DF96662091C5536002D9829 /* ACGBigNum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF96660091C5536002D9829 /* ACGBigNum.m */; };
-		2DF96665091C5546002D9829 /* KagiGenericACG.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF96663091C5546002D9829 /* KagiGenericACG.h */; };
-		2DF96666091C5546002D9829 /* KagiGenericACG.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF96664091C5546002D9829 /* KagiGenericACG.m */; };
-		8D11072A0486CEB800E47090 /* SioMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* SioMain.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +74,8 @@
 			isa = PBXBuildRule;
 			compilerSpec = com.apple.compilers.gcc.3_3;
 			fileType = sourcecode.c;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 			);
@@ -91,17 +90,14 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2DF96661091C5536002D9829 /* ACGBigNum.h in CopyFiles */,
-				2DF96665091C5546002D9829 /* KagiGenericACG.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SioMain.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2D01978B08F4B80E00ADDFD4 /* text.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = text.tiff; sourceTree = SOURCE_ROOT; };
@@ -118,12 +114,18 @@
 		2D2720F40901A9C500DB4B91 /* cassetteon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = cassetteon.tiff; sourceTree = SOURCE_ROOT; };
 		2D5B2AB808F4C3DA00D1625E /* AboutBox.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AboutBox.h; sourceTree = SOURCE_ROOT; };
 		2D5B2AB908F4C3DA00D1625E /* AboutBox.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AboutBox.m; sourceTree = SOURCE_ROOT; };
-		2D5B2ABB08F4C3F100D1625E /* AboutBox.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = AboutBox.nib; sourceTree = SOURCE_ROOT; };
 		2D5B2ABC08F4C3F100D1625E /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = Credits.html; sourceTree = SOURCE_ROOT; };
+		2D5D5692247C4C9800F6FEEF /* AboutBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutBox.xib; sourceTree = "<group>"; };
+		2D5D5693247C4C9800F6FEEF /* MediaManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaManager.xib; sourceTree = "<group>"; };
+		2D5D5694247C4C9800F6FEEF /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		2D5D5699247C4CC200F6FEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SioMain.xib; sourceTree = "<group>"; };
 		2D69B7C10C6420FE0035D6DD /* diskette.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = diskette.tiff; sourceTree = SOURCE_ROOT; };
 		2D6DCEEE08FCCDFC00FDD389 /* Sio2OSX.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sio2OSX.icns; sourceTree = "<group>"; };
 		2DB5AE140C94DEBF00D51514 /* 850off.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 850off.tiff; sourceTree = "<group>"; };
 		2DB5AE150C94DEBF00D51514 /* 850on.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 850on.tiff; sourceTree = "<group>"; };
+		2DB776B3247B720400646F3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2DB776B6247C330700646F3F /* PrintOutputConfirm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PrintOutputConfirm.xib; path = ../../../../Volumes/markg/Sio2OSX/Sio2OSX/PrintOutputConfirm.xib; sourceTree = "<group>"; };
+		2DB776B7247C330700646F3F /* PrintOutput.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PrintOutput.xib; path = ../../../../Volumes/markg/Sio2OSX/Sio2OSX/PrintOutput.xib; sourceTree = "<group>"; };
 		2DD755A809131C56002466D0 /* CassInfoUpdate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CassInfoUpdate.h; sourceTree = SOURCE_ROOT; };
 		2DD755A909131C56002466D0 /* CassInfoUpdate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CassInfoUpdate.m; sourceTree = SOURCE_ROOT; };
 		2DD755B809131D4E002466D0 /* CassStatusUpdate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CassStatusUpdate.h; sourceTree = "<group>"; };
@@ -176,16 +178,10 @@
 		2DE934ED08F372F600027E7F /* Fuji.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Fuji.icns; sourceTree = SOURCE_ROOT; };
 		2DE934EE08F372F600027E7F /* lock.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = lock.tiff; sourceTree = SOURCE_ROOT; };
 		2DE934EF08F372F600027E7F /* lockoff.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = lockoff.tiff; sourceTree = SOURCE_ROOT; };
-		2DE934F008F372F600027E7F /* MediaManager.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MediaManager.nib; sourceTree = SOURCE_ROOT; };
-		2DE934F108F372F600027E7F /* Preferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Preferences.nib; sourceTree = SOURCE_ROOT; };
-		2DE934F208F372F600027E7F /* PrintOutput.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = PrintOutput.nib; sourceTree = SOURCE_ROOT; };
-		2DE934F408F372F600027E7F /* PrintOutputConfirm.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = PrintOutputConfirm.nib; sourceTree = SOURCE_ROOT; };
 		2DE9350908F3731300027E7F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		2DEB621008F7484700B82E6E /* FujiCable.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FujiCable.icns; sourceTree = SOURCE_ROOT; };
 		2DF9665F091C5536002D9829 /* ACGBigNum.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACGBigNum.h; sourceTree = SOURCE_ROOT; };
 		2DF96660091C5536002D9829 /* ACGBigNum.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ACGBigNum.m; sourceTree = SOURCE_ROOT; };
-		2DF96663091C5546002D9829 /* KagiGenericACG.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KagiGenericACG.h; sourceTree = SOURCE_ROOT; };
-		2DF96664091C5546002D9829 /* KagiGenericACG.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = KagiGenericACG.m; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* Sio2OSX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sio2OSX_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Sio2OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sio2OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,8 +223,6 @@
 				2DD755B909131D4E002466D0 /* CassStatusUpdate.m */,
 				2DE934B508F3728000027E7F /* EpsonFX80Simulator.h */,
 				2DE934B608F3728000027E7F /* EpsonFX80Simulator.m */,
-				2DF96663091C5546002D9829 /* KagiGenericACG.h */,
-				2DF96664091C5546002D9829 /* KagiGenericACG.m */,
 				2DDA45FC0912749400167297 /* LedUpdate.h */,
 				2DDA45FD0912749400167297 /* LedUpdate.m */,
 				2DE934B708F3728000027E7F /* MediaManager.h */,
@@ -335,12 +329,12 @@
 				2D6DCEEE08FCCDFC00FDD389 /* Sio2OSX.icns */,
 				2D2720E10901A7A900DB4B91 /* ToStartOff.png */,
 				2D2720E20901A7A900DB4B91 /* ToStartOn.png */,
-				2DE934F008F372F600027E7F /* MediaManager.nib */,
-				2D5B2ABB08F4C3F100D1625E /* AboutBox.nib */,
-				2DE934F108F372F600027E7F /* Preferences.nib */,
-				2DE934F208F372F600027E7F /* PrintOutput.nib */,
-				2DE934F408F372F600027E7F /* PrintOutputConfirm.nib */,
-				29B97318FDCFA39411CA2CEA /* SioMain.nib */,
+				2D5D5692247C4C9800F6FEEF /* AboutBox.xib */,
+				2D5D5693247C4C9800F6FEEF /* MediaManager.xib */,
+				2D5D5694247C4C9800F6FEEF /* Preferences.xib */,
+				2DB776B7247C330700646F3F /* PrintOutput.xib */,
+				2DB776B6247C330700646F3F /* PrintOutputConfirm.xib */,
+				2D5D5698247C4CC200F6FEEF /* SioMain.xib */,
 				2D5B2ABC08F4C3F100D1625E /* Credits.html */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				2D24994E091560A200FEDFD8 /* Sio2OSX Help */,
@@ -386,15 +380,19 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+			};
 			buildConfigurationList = 2DF5317B09C3CB2E002DB24A /* Build configuration list for PBXProject "Sio2OSX" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
+				de,
+				ja,
+				fr,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Sio2OSX */;
 			projectDirPath = "";
@@ -410,7 +408,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* SioMain.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				2DE934F708F372F600027E7F /* atari810closed.tiff in Resources */,
 				2DE934F808F372F600027E7F /* atari810emtpy.tiff in Resources */,
@@ -420,32 +417,32 @@
 				2DE934FC08F372F600027E7F /* atari825.tiff in Resources */,
 				2DE934FD08F372F600027E7F /* atari1020.tiff in Resources */,
 				2DE934FE08F372F600027E7F /* epson.tiff in Resources */,
+				2DB776B9247C330700646F3F /* PrintOutput.xib in Resources */,
 				2DE934FF08F372F600027E7F /* Fuji.icns in Resources */,
 				2DE9350008F372F600027E7F /* lock.tiff in Resources */,
 				2DE9350108F372F600027E7F /* lockoff.tiff in Resources */,
-				2DE9350208F372F600027E7F /* MediaManager.nib in Resources */,
-				2DE9350308F372F600027E7F /* Preferences.nib in Resources */,
-				2DE9350408F372F600027E7F /* PrintOutput.nib in Resources */,
-				2DE9350608F372F600027E7F /* PrintOutputConfirm.nib in Resources */,
 				2D01978C08F4B80E00ADDFD4 /* text.tiff in Resources */,
-				2D5B2ABD08F4C3F100D1625E /* AboutBox.nib in Resources */,
 				2D5B2ABE08F4C3F100D1625E /* Credits.html in Resources */,
+				2DB776B8247C330700646F3F /* PrintOutputConfirm.xib in Resources */,
 				2DEB621108F7484700B82E6E /* FujiCable.icns in Resources */,
 				2D6DCEEF08FCCDFC00FDD389 /* Sio2OSX.icns in Resources */,
 				2D2720E30901A7A900DB4B91 /* FastForwardOff.png in Resources */,
 				2D2720E40901A7A900DB4B91 /* FastForwardOn.png in Resources */,
+				2D5D5695247C4C9800F6FEEF /* AboutBox.xib in Resources */,
 				2D2720E50901A7A900DB4B91 /* PlayOff.png in Resources */,
 				2D2720E60901A7A900DB4B91 /* PlayOn.png in Resources */,
 				2D2720E70901A7A900DB4B91 /* RewindOff.png in Resources */,
+				2D5D569A247C4CC200F6FEEF /* SioMain.xib in Resources */,
 				2D2720E80901A7A900DB4B91 /* RewindOn.png in Resources */,
 				2D2720E90901A7A900DB4B91 /* ToStartOff.png in Resources */,
 				2D2720EA0901A7A900DB4B91 /* ToStartOn.png in Resources */,
 				2D2720F50901A9C500DB4B91 /* cassetteoff.tiff in Resources */,
 				2D2720F60901A9C500DB4B91 /* cassetteon.tiff in Resources */,
 				2D24996D091560A200FEDFD8 /* Sio2OSX Help in Resources */,
-				2DE6BF4109C3E63A005748C2 /* Sio2OSX.xcconfig in Resources */,
 				2D69B7C20C6420FE0035D6DD /* diskette.tiff in Resources */,
 				2DB5AE160C94DEBF00D51514 /* 850off.tiff in Resources */,
+				2D5D5696247C4C9800F6FEEF /* MediaManager.xib in Resources */,
+				2D5D5697247C4C9800F6FEEF /* Preferences.xib in Resources */,
 				2DB5AE170C94DEBF00D51514 /* 850on.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,7 +475,6 @@
 				2DD755AA09131C56002466D0 /* CassInfoUpdate.m in Sources */,
 				2DD755BA09131D4E002466D0 /* CassStatusUpdate.m in Sources */,
 				2DF96662091C5536002D9829 /* ACGBigNum.m in Sources */,
-				2DF96666091C5546002D9829 /* KagiGenericACG.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,17 +484,17 @@
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				2DB776B3247B720400646F3F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* SioMain.nib */ = {
+		2D5D5698247C4CC200F6FEEF /* SioMain.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				2D5D5699247C4CC200F6FEEF /* Base */,
 			);
-			name = SioMain.nib;
+			name = SioMain.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -508,11 +504,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = /Users/markg/Sio2OSX/Sio2OSX;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -522,7 +519,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarimac.sio2osx;
 				PRODUCT_NAME = Sio2OSX;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
@@ -533,14 +530,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = /Users/markg/Sio2OSX/Sio2OSX;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Sio2OSX_Prefix.pch;
@@ -549,7 +543,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarimac.sio2osx;
 				PRODUCT_NAME = Sio2OSX;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -560,6 +554,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
 				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = /Users/markg/Sio2OSX/Sio2OSX;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -570,6 +566,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarimac.sio2osx;
 				PRODUCT_NAME = Sio2OSX;
 				WRAPPER_EXTENSION = app;
 			};
@@ -578,18 +575,104 @@
 		2DF5317C09C3CB2E002DB24A /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
 		2DF5317D09C3CB2E002DB24A /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};
 		2DF5317E09C3CB2E002DB24A /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
 			};
 			name = Default;
 		};
