@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>850 Emulation</title><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+
+</head>
+<body>
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="20%"><img style="width: 108px; height: 136px;" src="x.png" alt="">
+<br>
+</td>
+<td valign="top"><b><font size="+3">Sio2OSX
+Help<br>
+850 Emulation</font> </b><br>
+<br>
+<br>
+<a href="index.html">Introduction</a>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="SerialPort.html">Serial Port</a>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="DiskDrives.html">Disk
+Drives</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<a href="Cassettes.html">Cassettes</a>
+&nbsp; &nbsp; &nbsp; &nbsp; <a href="850Emulation.html">850 Emulation</a>
+<br>
+<a href="PrinterEmulation.html">Printer Emulation</a>
+&nbsp; &nbsp; <a href="preferences.html">Preferences</a>
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="ReleaseHistory.html">Release History</a>
+&nbsp; &nbsp; <a href="Credits.html">Credits</a>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+Sio2OSX fully emulates the 4 serial ports of the Atari 850
+Interface. &nbsp;Users are allowed to chose to connect each of the
+4 available ports of the 850 to a Internet Modem simulation or to
+additional serial ports connected to the Macintosh. &nbsp;Connecting to
+the Internet Modem simulation&nbsp;will
+allow connection to or hosting of telnet based BBS's. &nbsp;Connecting
+to&nbsp;additional
+serial ports&nbsp;will allow you to
+connect the Atari to external serial devices.<br><br>The status of the 850 Emulation is controled by the 850 power button on the main screen of the program:<br><br><img style="width: 83px; height: 101px;" alt="" src="850Status.png"><br><br>By
+default the 850 Emulation comes up as off. &nbsp;To turn it on press
+the On button. &nbsp;The image above shows the emulation on (note the
+red light on the 850), and pressing the Off button will turn it off.
+&nbsp;Cycling the power on the 850 will reset it's internal state, just
+like the real device.<br><br><span style="font-weight: bold; text-decoration: underline;">850 Port Connection:</span><br><br>Devices, including the Internet Modem, are connected/disconnect from the 850 port by using the <a href="850Tab.html">850 Tab</a>
+in the Preference panel. &nbsp;Note, when connecting to actual serial
+ports, the emulation overcomes one limitation of the 850. &nbsp;On
+ports 2,3, and 4, not all of the hardware handshake lines were present
+in the real 850, but the emulation makes no distinction between the 4
+ports, and all of the lines are available for use on all ports.<br><br><span style="font-weight: bold; text-decoration: underline;">Internet Modem Configuration and Use:</span><br><br>The
+internet modem simulation in Sio2OSX simulates a Hayes compatible modem
+connected to one of the 850 ports. &nbsp;However, this modem "dials"
+and "answers" calls using network socket connections instead of phone
+lines, so that the user can connect to Telnet based BBS's or host a
+Telnet BBS with their Atari. &nbsp;The internet modem configuration is
+controlled from the <a href="ModemTab.html">Modem Tab</a> in the Preference panel.<br><br>There
+are two components to the simulation, the command processing and the
+server. &nbsp;The command processor is used for both the server and the
+client. &nbsp;The server may be enabled or disabled in the <a href="ModemTab.html">Modem Tab</a>
+in the Preference panel, so if you do not want to have a TCP port open
+on your system for the server, leave this option disabled. &nbsp;Once
+started, the server can be stopped and started through the modem
+command processor described in the next section.<br><br><span style="font-weight: bold; text-decoration: underline;">Internet Modem Commands</span><br><br>The
+internet modem will respond to a subset of the Hayes AT command set.
+&nbsp;The function and syntax of each of the commands it will respond
+to is shown below. &nbsp;One restriction that should be noted, is that
+unlike actual modems, the simulation requires that each command&nbsp;be
+on a seperate line.<br><br><span style="font-style: italic; font-weight: bold;">ATA</span><br>&nbsp;&nbsp;&nbsp;
+This command causes the modem to answer if it has received a RING.
+(with the internet modem, this means that a client has tried to connect
+to the server listening on a specific port). &nbsp;This means the modem
+will leave command mode, and enter data mode.. &nbsp;If modem Auto
+Answer is turned on in the configuration, this command is not required,
+and the modem will automatically go to data mode.<br><br><span style="font-weight: bold; font-style: italic;">ATD, ATDI, or ATDT</span><br>&nbsp;
+&nbsp; &nbsp;All three of these commands will cause the modem to "dial"
+to an internet address (and optionally port number). &nbsp;If the
+internet connection is made successfully, the modem will return a
+CONNECT buad message. &nbsp;If the connection is not made, the modem
+will return NO CARRIER.<br>&nbsp; &nbsp; &nbsp;Here are some examples. &nbsp;To dial the bbs ataribbs.com on the default port (23) you would enter:<br><br>&nbsp;&nbsp;&nbsp; ATD ATARIBBS.COM<br><br>&nbsp; &nbsp; To dial the bbs ataribbs.org on port 8888 you would enter:<br><br>&nbsp;&nbsp;&nbsp; ATDT ATARIBBS.ORG 8888<br><br><span style="font-weight: bold; font-style: italic;">ATDP</span><br>&nbsp;&nbsp;&nbsp;
+&nbsp;This command is used to dial an internet address and port that
+were previously stored using the AT&amp;Z command described later, or
+using&nbsp;the <a href="ModemTab.html">Modem Tab</a> in the Preference panel.<br>&nbsp; &nbsp; &nbsp;For example, to dial the first stored host you would enter:<br><br>&nbsp;&nbsp;&nbsp; ATDP 1<br><br><span style="font-weight: bold; font-style: italic;">ATE</span><br>&nbsp;&nbsp;&nbsp;
+&nbsp;This command is used to turn the echo of characters from the
+modem on or off. &nbsp;With Echo on, the modem will echo all characters
+it receives from the computer back to the computer, so one can see what
+one types. &nbsp;The default for Echo is on, but this default can be
+changed using&nbsp;the <a href="ModemTab.html">Modem Tab</a> in the Preference panel. &nbsp;To turn Echo on, you would enter ATE1, to turn it off ATE0.<br><br><span style="font-weight: bold; font-style: italic;">ATH</span><br>&nbsp;
+&nbsp; &nbsp;This command is used to hang up an active connection.
+&nbsp;It would require the modem be in command mode, which means the
+escape sequence (by default '+++') would have to have been previously
+entered to take the modem from data to command mode. <br><br><span style="font-weight: bold; font-style: italic;">ATI</span><span style="font-style: italic;"> </span><br>&nbsp; &nbsp; &nbsp;This command displays a help summary of the commands the modem accepts.&nbsp; &nbsp; &nbsp;<br><br><span style="font-weight: bold; font-style: italic;">ATK</span><span style="font-style: italic;"> </span><br>&nbsp;&nbsp;
+&nbsp; This command is used to stop (kill) the server portion of the
+internet simulator. &nbsp;By default, the server is not enabled, but it
+may be enabled by using&nbsp;the <a href="ModemTab.html">Modem Tab</a> in the Preference panel. &nbsp;<br><br><span style="font-weight: bold; font-style: italic;">ATO</span><span style="font-style: italic;">&nbsp;</span>&nbsp;&nbsp; <br>&nbsp;
+&nbsp; &nbsp;This command is used to resume&nbsp;an active connection
+that has been interrupted using the escape sequence, returning the
+modem to data mode.<br><span style="font-weight: bold;"><br><span style="font-style: italic;">ATR</span></span><span style="font-style: italic;"> </span><br>&nbsp; &nbsp; &nbsp;This command is used to restart the server portion of the
+internet simulator, if it has been stopped by the ATK command.<br><br><span style="font-weight: bold; font-style: italic;">ATS</span><br>&nbsp;
+&nbsp; &nbsp;This command is used to set the registers in the modem.
+&nbsp;Currently, only two options are settable this way. &nbsp;The
+format of the command is:<br><br>&nbsp;&nbsp;&nbsp; ATSn=r<br>&nbsp;
+&nbsp; &nbsp;Where n is the register number, and r is the value to
+store there. &nbsp;The following are the register numbers and possible
+values:<br><br>&nbsp; &nbsp; Register 0: Auto Answer<br>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; 0 = Off<br>&nbsp; &nbsp; &nbsp; &nbsp; 1 = On<br>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; Default is Off (unless changed in the&nbsp; <a href="ModemTab.html">Modem Tab</a> in the Preference panel.)<br><br>&nbsp;&nbsp;&nbsp; Register 2: Escape Charcter<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 0 thru 127 =&nbsp;ASCII value of the escape character<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 128 thru 255 = Escape character is disabled<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Defualt is 43, which is ASCII for &nbsp;the '+' character. (unless changed in <a href="ModemTab.html">Modem Tab</a> in the Preference panel.)<br><br><span style="font-weight: bold; font-style: italic;">ATZ</span><span style="font-style: italic;">&nbsp;</span>&nbsp;&nbsp; : Reset Modem<br>&nbsp;
+&nbsp; &nbsp;This command resets the modem, hanging up if there is an
+active connection. &nbsp;It sets the Auto Answer, Echo, and Esacpe
+Character to the defaults which are set in the&nbsp; <a href="ModemTab.html">Modem Tab</a> in the Preference panel.<br><br><span style="font-weight: bold; font-style: italic;">AT&amp;F</span><span style="font-style: italic;">&nbsp;</span>&nbsp; <br>&nbsp;
+&nbsp; &nbsp;This command resets the modem to the factory defaults. It
+sets the Auto Answer to Off, Echo to On, and Esacpe Character to '+'.
+&nbsp;Note is does not set them to the
+defaults which are set in the&nbsp; <a href="ModemTab.html">Modem Tab</a> in the Preference panel.<br><br><span style="font-weight: bold; font-style: italic;">AT&amp;V</span>&nbsp;&nbsp; <br>&nbsp;
+&nbsp; &nbsp;This command displays the internet address and ports which
+have been stored in the modem for later dialing by ATDP. &nbsp;The
+numbers may also be edited in the <a href="ModemTab.html">Modem Tab</a> in the Preference panel.<br><br><span style="font-weight: bold; font-style: italic;">AT&amp;Z</span><br>&nbsp;
+&nbsp; &nbsp;This command is used to store internet addresses and ports
+for later use in dialing with the ATDP command. &nbsp;The format of the
+command is:<br><br>&nbsp;&nbsp;&nbsp; AT&amp;Zn=address [port]<br>&nbsp;
+&nbsp; &nbsp;Where n is the slot to store the address/port in (1-20),
+address is the internet address, and optionally port is the port
+number. &nbsp;If port is not specified, 23 will be used by default.<br>&nbsp;&nbsp;&nbsp; &nbsp;For Example:<br><br>&nbsp;&nbsp;&nbsp; AT&amp;Z1=ataribbs.com 1234<br>&nbsp;&nbsp;&nbsp; &nbsp;Will set the first stored address to ataribbs.com with a port number of 1234.<br><br><span style="font-weight: bold; font-style: italic;">+++&nbsp;</span>&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;
+&nbsp;When in data mode, typing the esacpe charcter 3 times in a row
+will force the modem back to command mode. &nbsp;The character used for
+escape can be changed using the ATS2= command, or in the <a href="ModemTab.html">Modem Tab</a> in the Preference panel.<br></body></html>

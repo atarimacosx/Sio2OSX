@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D01978C08F4B80E00ADDFD4 /* text.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2D01978B08F4B80E00ADDFD4 /* text.tiff */; };
+		2D24996D091560A200FEDFD8 /* Sio2OSX Help in Resources */ = {isa = PBXBuildFile; fileRef = 2D24994E091560A200FEDFD8 /* Sio2OSX Help */; };
+		2D2720E30901A7A900DB4B91 /* FastForwardOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720DB0901A7A900DB4B91 /* FastForwardOff.png */; };
+		2D2720E40901A7A900DB4B91 /* FastForwardOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720DC0901A7A900DB4B91 /* FastForwardOn.png */; };
+		2D2720E50901A7A900DB4B91 /* PlayOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720DD0901A7A900DB4B91 /* PlayOff.png */; };
+		2D2720E60901A7A900DB4B91 /* PlayOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720DE0901A7A900DB4B91 /* PlayOn.png */; };
+		2D2720E70901A7A900DB4B91 /* RewindOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720DF0901A7A900DB4B91 /* RewindOff.png */; };
+		2D2720E80901A7A900DB4B91 /* RewindOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720E00901A7A900DB4B91 /* RewindOn.png */; };
+		2D2720E90901A7A900DB4B91 /* ToStartOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720E10901A7A900DB4B91 /* ToStartOff.png */; };
+		2D2720EA0901A7A900DB4B91 /* ToStartOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720E20901A7A900DB4B91 /* ToStartOn.png */; };
+		2D2720F50901A9C500DB4B91 /* cassetteoff.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720F30901A9C500DB4B91 /* cassetteoff.tiff */; };
+		2D2720F60901A9C500DB4B91 /* cassetteon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2D2720F40901A9C500DB4B91 /* cassetteon.tiff */; };
+		2D5B2ABA08F4C3DA00D1625E /* AboutBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B2AB908F4C3DA00D1625E /* AboutBox.m */; };
+		2D5B2ABD08F4C3F100D1625E /* AboutBox.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B2ABB08F4C3F100D1625E /* AboutBox.nib */; };
+		2D5B2ABE08F4C3F100D1625E /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B2ABC08F4C3F100D1625E /* Credits.html */; };
+		2D69B7C20C6420FE0035D6DD /* diskette.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2D69B7C10C6420FE0035D6DD /* diskette.tiff */; };
+		2D6DCEEF08FCCDFC00FDD389 /* Sio2OSX.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DCEEE08FCCDFC00FDD389 /* Sio2OSX.icns */; };
+		2DB5AE160C94DEBF00D51514 /* 850off.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5AE140C94DEBF00D51514 /* 850off.tiff */; };
+		2DB5AE170C94DEBF00D51514 /* 850on.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5AE150C94DEBF00D51514 /* 850on.tiff */; };
+		2DD755AA09131C56002466D0 /* CassInfoUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD755A909131C56002466D0 /* CassInfoUpdate.m */; };
+		2DD755BA09131D4E002466D0 /* CassStatusUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD755B909131D4E002466D0 /* CassStatusUpdate.m */; };
+		2DDA45FE0912749400167297 /* LedUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA45FD0912749400167297 /* LedUpdate.m */; };
+		2DE6BF4109C3E63A005748C2 /* Sio2OSX.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */; };
+		2DE934CD08F3728000027E7F /* Atari800DriveTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934AC08F3728000027E7F /* Atari800DriveTextField.m */; };
+		2DE934CE08F3728000027E7F /* Atari800ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934AE08F3728000027E7F /* Atari800ImageView.m */; };
+		2DE934CF08F3728000027E7F /* Atari800MediaWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934B008F3728000027E7F /* Atari800MediaWindow.m */; };
+		2DE934D008F3728000027E7F /* Atari825Simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934B208F3728000027E7F /* Atari825Simulator.m */; };
+		2DE934D108F3728000027E7F /* Atari1020Simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934B408F3728000027E7F /* Atari1020Simulator.m */; };
+		2DE934D208F3728000027E7F /* EpsonFX80Simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934B608F3728000027E7F /* EpsonFX80Simulator.m */; };
+		2DE934D308F3728000027E7F /* MediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934B808F3728000027E7F /* MediaManager.m */; };
+		2DE934D408F3728000027E7F /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934BA08F3728000027E7F /* Preferences.m */; };
+		2DE934D508F3728000027E7F /* PrintableGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934BC08F3728000027E7F /* PrintableGraphics.m */; };
+		2DE934D608F3728000027E7F /* PrintablePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934BE08F3728000027E7F /* PrintablePath.m */; };
+		2DE934D708F3728000027E7F /* PrintableString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934C008F3728000027E7F /* PrintableString.m */; };
+		2DE934D808F3728000027E7F /* PrinterSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934C308F3728000027E7F /* PrinterSimulator.m */; };
+		2DE934D908F3728000027E7F /* PrinterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934C508F3728000027E7F /* PrinterView.m */; };
+		2DE934DA08F3728000027E7F /* PrintOutputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934C708F3728000027E7F /* PrintOutputController.m */; };
+		2DE934DB08F3728000027E7F /* SioMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934CA08F3728000027E7F /* SioMain.m */; };
+		2DE934DC08F3728000027E7F /* SioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE934CC08F3728000027E7F /* SioController.m */; };
+		2DE934F708F372F600027E7F /* atari810closed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934E508F372F600027E7F /* atari810closed.tiff */; };
+		2DE934F808F372F600027E7F /* atari810emtpy.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934E608F372F600027E7F /* atari810emtpy.tiff */; };
+		2DE934F908F372F600027E7F /* atari810off.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934E708F372F600027E7F /* atari810off.tiff */; };
+		2DE934FA08F372F600027E7F /* atari810read.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934E808F372F600027E7F /* atari810read.tiff */; };
+		2DE934FB08F372F600027E7F /* atari810write.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934E908F372F600027E7F /* atari810write.tiff */; };
+		2DE934FC08F372F600027E7F /* atari825.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934EA08F372F600027E7F /* atari825.tiff */; };
+		2DE934FD08F372F600027E7F /* atari1020.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934EB08F372F600027E7F /* atari1020.tiff */; };
+		2DE934FE08F372F600027E7F /* epson.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934EC08F372F600027E7F /* epson.tiff */; };
+		2DE934FF08F372F600027E7F /* Fuji.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934ED08F372F600027E7F /* Fuji.icns */; };
+		2DE9350008F372F600027E7F /* lock.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934EE08F372F600027E7F /* lock.tiff */; };
+		2DE9350108F372F600027E7F /* lockoff.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934EF08F372F600027E7F /* lockoff.tiff */; };
+		2DE9350208F372F600027E7F /* MediaManager.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934F008F372F600027E7F /* MediaManager.nib */; };
+		2DE9350308F372F600027E7F /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934F108F372F600027E7F /* Preferences.nib */; };
+		2DE9350408F372F600027E7F /* PrintOutput.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934F208F372F600027E7F /* PrintOutput.nib */; };
+		2DE9350608F372F600027E7F /* PrintOutputConfirm.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE934F408F372F600027E7F /* PrintOutputConfirm.nib */; };
+		2DE9350A08F3731300027E7F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE9350908F3731300027E7F /* IOKit.framework */; };
+		2DEB621108F7484700B82E6E /* FujiCable.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2DEB621008F7484700B82E6E /* FujiCable.icns */; };
+		2DF96661091C5536002D9829 /* ACGBigNum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF9665F091C5536002D9829 /* ACGBigNum.h */; };
+		2DF96662091C5536002D9829 /* ACGBigNum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF96660091C5536002D9829 /* ACGBigNum.m */; };
+		2DF96665091C5546002D9829 /* KagiGenericACG.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF96663091C5546002D9829 /* KagiGenericACG.h */; };
+		2DF96666091C5546002D9829 /* KagiGenericACG.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF96664091C5546002D9829 /* KagiGenericACG.m */; };
+		8D11072A0486CEB800E47090 /* SioMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* SioMain.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2DE4B4650920461700F34FFB /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D6471B30914753B003A6216 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DF96661091C5536002D9829 /* ACGBigNum.h in CopyFiles */,
+				2DF96665091C5546002D9829 /* KagiGenericACG.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SioMain.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2D01978B08F4B80E00ADDFD4 /* text.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = text.tiff; sourceTree = SOURCE_ROOT; };
+		2D24994E091560A200FEDFD8 /* Sio2OSX Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Sio2OSX Help"; sourceTree = SOURCE_ROOT; };
+		2D2720DB0901A7A900DB4B91 /* FastForwardOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FastForwardOff.png; sourceTree = SOURCE_ROOT; };
+		2D2720DC0901A7A900DB4B91 /* FastForwardOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FastForwardOn.png; sourceTree = SOURCE_ROOT; };
+		2D2720DD0901A7A900DB4B91 /* PlayOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayOff.png; sourceTree = SOURCE_ROOT; };
+		2D2720DE0901A7A900DB4B91 /* PlayOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayOn.png; sourceTree = SOURCE_ROOT; };
+		2D2720DF0901A7A900DB4B91 /* RewindOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RewindOff.png; sourceTree = SOURCE_ROOT; };
+		2D2720E00901A7A900DB4B91 /* RewindOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RewindOn.png; sourceTree = SOURCE_ROOT; };
+		2D2720E10901A7A900DB4B91 /* ToStartOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToStartOff.png; sourceTree = SOURCE_ROOT; };
+		2D2720E20901A7A900DB4B91 /* ToStartOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToStartOn.png; sourceTree = SOURCE_ROOT; };
+		2D2720F30901A9C500DB4B91 /* cassetteoff.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = cassetteoff.tiff; sourceTree = SOURCE_ROOT; };
+		2D2720F40901A9C500DB4B91 /* cassetteon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = cassetteon.tiff; sourceTree = SOURCE_ROOT; };
+		2D5B2AB808F4C3DA00D1625E /* AboutBox.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AboutBox.h; sourceTree = SOURCE_ROOT; };
+		2D5B2AB908F4C3DA00D1625E /* AboutBox.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AboutBox.m; sourceTree = SOURCE_ROOT; };
+		2D5B2ABB08F4C3F100D1625E /* AboutBox.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = AboutBox.nib; sourceTree = SOURCE_ROOT; };
+		2D5B2ABC08F4C3F100D1625E /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = Credits.html; sourceTree = SOURCE_ROOT; };
+		2D69B7C10C6420FE0035D6DD /* diskette.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = diskette.tiff; sourceTree = SOURCE_ROOT; };
+		2D6DCEEE08FCCDFC00FDD389 /* Sio2OSX.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sio2OSX.icns; sourceTree = "<group>"; };
+		2DB5AE140C94DEBF00D51514 /* 850off.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 850off.tiff; sourceTree = "<group>"; };
+		2DB5AE150C94DEBF00D51514 /* 850on.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 850on.tiff; sourceTree = "<group>"; };
+		2DD755A809131C56002466D0 /* CassInfoUpdate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CassInfoUpdate.h; sourceTree = SOURCE_ROOT; };
+		2DD755A909131C56002466D0 /* CassInfoUpdate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CassInfoUpdate.m; sourceTree = SOURCE_ROOT; };
+		2DD755B809131D4E002466D0 /* CassStatusUpdate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CassStatusUpdate.h; sourceTree = "<group>"; };
+		2DD755B909131D4E002466D0 /* CassStatusUpdate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CassStatusUpdate.m; sourceTree = SOURCE_ROOT; };
+		2DDA45FC0912749400167297 /* LedUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LedUpdate.h; sourceTree = "<group>"; };
+		2DDA45FD0912749400167297 /* LedUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LedUpdate.m; sourceTree = "<group>"; };
+		2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = Sio2OSX.xcconfig; sourceTree = SOURCE_ROOT; };
+		2DE934AB08F3728000027E7F /* Atari800DriveTextField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Atari800DriveTextField.h; sourceTree = SOURCE_ROOT; };
+		2DE934AC08F3728000027E7F /* Atari800DriveTextField.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Atari800DriveTextField.m; sourceTree = SOURCE_ROOT; };
+		2DE934AD08F3728000027E7F /* Atari800ImageView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Atari800ImageView.h; sourceTree = SOURCE_ROOT; };
+		2DE934AE08F3728000027E7F /* Atari800ImageView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Atari800ImageView.m; sourceTree = SOURCE_ROOT; };
+		2DE934AF08F3728000027E7F /* Atari800MediaWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Atari800MediaWindow.h; sourceTree = SOURCE_ROOT; };
+		2DE934B008F3728000027E7F /* Atari800MediaWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Atari800MediaWindow.m; sourceTree = SOURCE_ROOT; };
+		2DE934B108F3728000027E7F /* Atari825Simulator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Atari825Simulator.h; sourceTree = SOURCE_ROOT; };
+		2DE934B208F3728000027E7F /* Atari825Simulator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Atari825Simulator.m; sourceTree = SOURCE_ROOT; };
+		2DE934B308F3728000027E7F /* Atari1020Simulator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Atari1020Simulator.h; sourceTree = SOURCE_ROOT; };
+		2DE934B408F3728000027E7F /* Atari1020Simulator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Atari1020Simulator.m; sourceTree = SOURCE_ROOT; };
+		2DE934B508F3728000027E7F /* EpsonFX80Simulator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EpsonFX80Simulator.h; sourceTree = SOURCE_ROOT; };
+		2DE934B608F3728000027E7F /* EpsonFX80Simulator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = EpsonFX80Simulator.m; sourceTree = SOURCE_ROOT; };
+		2DE934B708F3728000027E7F /* MediaManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MediaManager.h; sourceTree = SOURCE_ROOT; };
+		2DE934B808F3728000027E7F /* MediaManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MediaManager.m; sourceTree = SOURCE_ROOT; };
+		2DE934B908F3728000027E7F /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = SOURCE_ROOT; };
+		2DE934BA08F3728000027E7F /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = SOURCE_ROOT; };
+		2DE934BB08F3728000027E7F /* PrintableGraphics.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrintableGraphics.h; sourceTree = SOURCE_ROOT; };
+		2DE934BC08F3728000027E7F /* PrintableGraphics.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PrintableGraphics.m; sourceTree = SOURCE_ROOT; };
+		2DE934BD08F3728000027E7F /* PrintablePath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrintablePath.h; sourceTree = SOURCE_ROOT; };
+		2DE934BE08F3728000027E7F /* PrintablePath.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PrintablePath.m; sourceTree = SOURCE_ROOT; };
+		2DE934BF08F3728000027E7F /* PrintableString.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrintableString.h; sourceTree = SOURCE_ROOT; };
+		2DE934C008F3728000027E7F /* PrintableString.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PrintableString.m; sourceTree = SOURCE_ROOT; };
+		2DE934C108F3728000027E7F /* PrinterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrinterProtocol.h; sourceTree = SOURCE_ROOT; };
+		2DE934C208F3728000027E7F /* PrinterSimulator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrinterSimulator.h; sourceTree = SOURCE_ROOT; };
+		2DE934C308F3728000027E7F /* PrinterSimulator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PrinterSimulator.m; sourceTree = SOURCE_ROOT; };
+		2DE934C408F3728000027E7F /* PrinterView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrinterView.h; sourceTree = SOURCE_ROOT; };
+		2DE934C508F3728000027E7F /* PrinterView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PrinterView.m; sourceTree = SOURCE_ROOT; };
+		2DE934C608F3728000027E7F /* PrintOutputController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrintOutputController.h; sourceTree = SOURCE_ROOT; };
+		2DE934C708F3728000027E7F /* PrintOutputController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PrintOutputController.m; sourceTree = SOURCE_ROOT; };
+		2DE934C808F3728000027E7F /* PrintProtocol.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrintProtocol.h; sourceTree = SOURCE_ROOT; };
+		2DE934C908F3728000027E7F /* SioMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SioMain.h; sourceTree = "<group>"; };
+		2DE934CA08F3728000027E7F /* SioMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SioMain.m; sourceTree = "<group>"; };
+		2DE934CB08F3728000027E7F /* SioController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SioController.h; sourceTree = SOURCE_ROOT; };
+		2DE934CC08F3728000027E7F /* SioController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SioController.m; sourceTree = SOURCE_ROOT; };
+		2DE934E508F372F600027E7F /* atari810closed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = atari810closed.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934E608F372F600027E7F /* atari810emtpy.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = atari810emtpy.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934E708F372F600027E7F /* atari810off.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = atari810off.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934E808F372F600027E7F /* atari810read.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = atari810read.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934E908F372F600027E7F /* atari810write.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = atari810write.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934EA08F372F600027E7F /* atari825.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = atari825.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934EB08F372F600027E7F /* atari1020.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = atari1020.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934EC08F372F600027E7F /* epson.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = epson.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934ED08F372F600027E7F /* Fuji.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Fuji.icns; sourceTree = SOURCE_ROOT; };
+		2DE934EE08F372F600027E7F /* lock.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = lock.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934EF08F372F600027E7F /* lockoff.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = lockoff.tiff; sourceTree = SOURCE_ROOT; };
+		2DE934F008F372F600027E7F /* MediaManager.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MediaManager.nib; sourceTree = SOURCE_ROOT; };
+		2DE934F108F372F600027E7F /* Preferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Preferences.nib; sourceTree = SOURCE_ROOT; };
+		2DE934F208F372F600027E7F /* PrintOutput.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = PrintOutput.nib; sourceTree = SOURCE_ROOT; };
+		2DE934F408F372F600027E7F /* PrintOutputConfirm.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = PrintOutputConfirm.nib; sourceTree = SOURCE_ROOT; };
+		2DE9350908F3731300027E7F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		2DEB621008F7484700B82E6E /* FujiCable.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FujiCable.icns; sourceTree = SOURCE_ROOT; };
+		2DF9665F091C5536002D9829 /* ACGBigNum.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACGBigNum.h; sourceTree = SOURCE_ROOT; };
+		2DF96660091C5536002D9829 /* ACGBigNum.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ACGBigNum.m; sourceTree = SOURCE_ROOT; };
+		2DF96663091C5546002D9829 /* KagiGenericACG.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KagiGenericACG.h; sourceTree = SOURCE_ROOT; };
+		2DF96664091C5546002D9829 /* KagiGenericACG.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = KagiGenericACG.m; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Sio2OSX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sio2OSX_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Sio2OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sio2OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				2DE9350A08F3731300027E7F /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2D5B2AB808F4C3DA00D1625E /* AboutBox.h */,
+				2D5B2AB908F4C3DA00D1625E /* AboutBox.m */,
+				2DF9665F091C5536002D9829 /* ACGBigNum.h */,
+				2DF96660091C5536002D9829 /* ACGBigNum.m */,
+				2DE934AB08F3728000027E7F /* Atari800DriveTextField.h */,
+				2DE934AC08F3728000027E7F /* Atari800DriveTextField.m */,
+				2DE934AD08F3728000027E7F /* Atari800ImageView.h */,
+				2DE934AE08F3728000027E7F /* Atari800ImageView.m */,
+				2DE934AF08F3728000027E7F /* Atari800MediaWindow.h */,
+				2DE934B008F3728000027E7F /* Atari800MediaWindow.m */,
+				2DE934B108F3728000027E7F /* Atari825Simulator.h */,
+				2DE934B208F3728000027E7F /* Atari825Simulator.m */,
+				2DE934B308F3728000027E7F /* Atari1020Simulator.h */,
+				2DE934B408F3728000027E7F /* Atari1020Simulator.m */,
+				2DD755A809131C56002466D0 /* CassInfoUpdate.h */,
+				2DD755A909131C56002466D0 /* CassInfoUpdate.m */,
+				2DD755B809131D4E002466D0 /* CassStatusUpdate.h */,
+				2DD755B909131D4E002466D0 /* CassStatusUpdate.m */,
+				2DE934B508F3728000027E7F /* EpsonFX80Simulator.h */,
+				2DE934B608F3728000027E7F /* EpsonFX80Simulator.m */,
+				2DF96663091C5546002D9829 /* KagiGenericACG.h */,
+				2DF96664091C5546002D9829 /* KagiGenericACG.m */,
+				2DDA45FC0912749400167297 /* LedUpdate.h */,
+				2DDA45FD0912749400167297 /* LedUpdate.m */,
+				2DE934B708F3728000027E7F /* MediaManager.h */,
+				2DE934B808F3728000027E7F /* MediaManager.m */,
+				2DE934B908F3728000027E7F /* Preferences.h */,
+				2DE934BA08F3728000027E7F /* Preferences.m */,
+				2DE934BB08F3728000027E7F /* PrintableGraphics.h */,
+				2DE934BC08F3728000027E7F /* PrintableGraphics.m */,
+				2DE934BD08F3728000027E7F /* PrintablePath.h */,
+				2DE934BE08F3728000027E7F /* PrintablePath.m */,
+				2DE934BF08F3728000027E7F /* PrintableString.h */,
+				2DE934C008F3728000027E7F /* PrintableString.m */,
+				2DE934C108F3728000027E7F /* PrinterProtocol.h */,
+				2DE934C208F3728000027E7F /* PrinterSimulator.h */,
+				2DE934C308F3728000027E7F /* PrinterSimulator.m */,
+				2DE934C408F3728000027E7F /* PrinterView.h */,
+				2DE934C508F3728000027E7F /* PrinterView.m */,
+				2DE934C608F3728000027E7F /* PrintOutputController.h */,
+				2DE934C708F3728000027E7F /* PrintOutputController.m */,
+				2DE934C808F3728000027E7F /* PrintProtocol.h */,
+				2DE934C908F3728000027E7F /* SioMain.h */,
+				2DE934CA08F3728000027E7F /* SioMain.m */,
+				2DE934CB08F3728000027E7F /* SioController.h */,
+				2DE934CC08F3728000027E7F /* SioController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DE9350908F3731300027E7F /* IOKit.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Sio2OSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Sio2OSX */ = {
+			isa = PBXGroup;
+			children = (
+				2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Sio2OSX;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Sio2OSX_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DB5AE140C94DEBF00D51514 /* 850off.tiff */,
+				2DB5AE150C94DEBF00D51514 /* 850on.tiff */,
+				2DE934E508F372F600027E7F /* atari810closed.tiff */,
+				2DE934E608F372F600027E7F /* atari810emtpy.tiff */,
+				2DE934E708F372F600027E7F /* atari810off.tiff */,
+				2DE934E808F372F600027E7F /* atari810read.tiff */,
+				2DE934E908F372F600027E7F /* atari810write.tiff */,
+				2DE934EA08F372F600027E7F /* atari825.tiff */,
+				2DE934EB08F372F600027E7F /* atari1020.tiff */,
+				2D2720F30901A9C500DB4B91 /* cassetteoff.tiff */,
+				2D2720F40901A9C500DB4B91 /* cassetteon.tiff */,
+				2D69B7C10C6420FE0035D6DD /* diskette.tiff */,
+				2DE934EC08F372F600027E7F /* epson.tiff */,
+				2D2720DB0901A7A900DB4B91 /* FastForwardOff.png */,
+				2D2720DC0901A7A900DB4B91 /* FastForwardOn.png */,
+				2DE934ED08F372F600027E7F /* Fuji.icns */,
+				2DEB621008F7484700B82E6E /* FujiCable.icns */,
+				2D2720DD0901A7A900DB4B91 /* PlayOff.png */,
+				2D2720DE0901A7A900DB4B91 /* PlayOn.png */,
+				2DE934EE08F372F600027E7F /* lock.tiff */,
+				2DE934EF08F372F600027E7F /* lockoff.tiff */,
+				2D2720DF0901A7A900DB4B91 /* RewindOff.png */,
+				2D2720E00901A7A900DB4B91 /* RewindOn.png */,
+				2D01978B08F4B80E00ADDFD4 /* text.tiff */,
+				2D6DCEEE08FCCDFC00FDD389 /* Sio2OSX.icns */,
+				2D2720E10901A7A900DB4B91 /* ToStartOff.png */,
+				2D2720E20901A7A900DB4B91 /* ToStartOn.png */,
+				2DE934F008F372F600027E7F /* MediaManager.nib */,
+				2D5B2ABB08F4C3F100D1625E /* AboutBox.nib */,
+				2DE934F108F372F600027E7F /* Preferences.nib */,
+				2DE934F208F372F600027E7F /* PrintOutput.nib */,
+				2DE934F408F372F600027E7F /* PrintOutputConfirm.nib */,
+				29B97318FDCFA39411CA2CEA /* SioMain.nib */,
+				2D5B2ABC08F4C3F100D1625E /* Credits.html */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				2D24994E091560A200FEDFD8 /* Sio2OSX Help */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Sio2OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DF5317709C3CB2E002DB24A /* Build configuration list for PBXNativeTarget "Sio2OSX" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				2D6471B30914753B003A6216 /* CopyFiles */,
+			);
+			buildRules = (
+				2DE4B4650920461700F34FFB /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Sio2OSX;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Sio2OSX;
+			productReference = 8D1107320486CEB800E47090 /* Sio2OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2DF5317B09C3CB2E002DB24A /* Build configuration list for PBXProject "Sio2OSX" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Sio2OSX */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Sio2OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* SioMain.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				2DE934F708F372F600027E7F /* atari810closed.tiff in Resources */,
+				2DE934F808F372F600027E7F /* atari810emtpy.tiff in Resources */,
+				2DE934F908F372F600027E7F /* atari810off.tiff in Resources */,
+				2DE934FA08F372F600027E7F /* atari810read.tiff in Resources */,
+				2DE934FB08F372F600027E7F /* atari810write.tiff in Resources */,
+				2DE934FC08F372F600027E7F /* atari825.tiff in Resources */,
+				2DE934FD08F372F600027E7F /* atari1020.tiff in Resources */,
+				2DE934FE08F372F600027E7F /* epson.tiff in Resources */,
+				2DE934FF08F372F600027E7F /* Fuji.icns in Resources */,
+				2DE9350008F372F600027E7F /* lock.tiff in Resources */,
+				2DE9350108F372F600027E7F /* lockoff.tiff in Resources */,
+				2DE9350208F372F600027E7F /* MediaManager.nib in Resources */,
+				2DE9350308F372F600027E7F /* Preferences.nib in Resources */,
+				2DE9350408F372F600027E7F /* PrintOutput.nib in Resources */,
+				2DE9350608F372F600027E7F /* PrintOutputConfirm.nib in Resources */,
+				2D01978C08F4B80E00ADDFD4 /* text.tiff in Resources */,
+				2D5B2ABD08F4C3F100D1625E /* AboutBox.nib in Resources */,
+				2D5B2ABE08F4C3F100D1625E /* Credits.html in Resources */,
+				2DEB621108F7484700B82E6E /* FujiCable.icns in Resources */,
+				2D6DCEEF08FCCDFC00FDD389 /* Sio2OSX.icns in Resources */,
+				2D2720E30901A7A900DB4B91 /* FastForwardOff.png in Resources */,
+				2D2720E40901A7A900DB4B91 /* FastForwardOn.png in Resources */,
+				2D2720E50901A7A900DB4B91 /* PlayOff.png in Resources */,
+				2D2720E60901A7A900DB4B91 /* PlayOn.png in Resources */,
+				2D2720E70901A7A900DB4B91 /* RewindOff.png in Resources */,
+				2D2720E80901A7A900DB4B91 /* RewindOn.png in Resources */,
+				2D2720E90901A7A900DB4B91 /* ToStartOff.png in Resources */,
+				2D2720EA0901A7A900DB4B91 /* ToStartOn.png in Resources */,
+				2D2720F50901A9C500DB4B91 /* cassetteoff.tiff in Resources */,
+				2D2720F60901A9C500DB4B91 /* cassetteon.tiff in Resources */,
+				2D24996D091560A200FEDFD8 /* Sio2OSX Help in Resources */,
+				2DE6BF4109C3E63A005748C2 /* Sio2OSX.xcconfig in Resources */,
+				2D69B7C20C6420FE0035D6DD /* diskette.tiff in Resources */,
+				2DB5AE160C94DEBF00D51514 /* 850off.tiff in Resources */,
+				2DB5AE170C94DEBF00D51514 /* 850on.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE934CD08F3728000027E7F /* Atari800DriveTextField.m in Sources */,
+				2DE934CE08F3728000027E7F /* Atari800ImageView.m in Sources */,
+				2DE934CF08F3728000027E7F /* Atari800MediaWindow.m in Sources */,
+				2DE934D008F3728000027E7F /* Atari825Simulator.m in Sources */,
+				2DE934D108F3728000027E7F /* Atari1020Simulator.m in Sources */,
+				2DE934D208F3728000027E7F /* EpsonFX80Simulator.m in Sources */,
+				2DE934D308F3728000027E7F /* MediaManager.m in Sources */,
+				2DE934D408F3728000027E7F /* Preferences.m in Sources */,
+				2DE934D508F3728000027E7F /* PrintableGraphics.m in Sources */,
+				2DE934D608F3728000027E7F /* PrintablePath.m in Sources */,
+				2DE934D708F3728000027E7F /* PrintableString.m in Sources */,
+				2DE934D808F3728000027E7F /* PrinterSimulator.m in Sources */,
+				2DE934D908F3728000027E7F /* PrinterView.m in Sources */,
+				2DE934DA08F3728000027E7F /* PrintOutputController.m in Sources */,
+				2DE934DB08F3728000027E7F /* SioMain.m in Sources */,
+				2DE934DC08F3728000027E7F /* SioController.m in Sources */,
+				2D5B2ABA08F4C3DA00D1625E /* AboutBox.m in Sources */,
+				2DDA45FE0912749400167297 /* LedUpdate.m in Sources */,
+				2DD755AA09131C56002466D0 /* CassInfoUpdate.m in Sources */,
+				2DD755BA09131D4E002466D0 /* CassStatusUpdate.m in Sources */,
+				2DF96662091C5536002D9829 /* ACGBigNum.m in Sources */,
+				2DF96666091C5546002D9829 /* KagiGenericACG.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* SioMain.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = SioMain.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DF5317809C3CB2E002DB24A /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/markg/Sio2OSX/Sio2OSX;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sio2OSX_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Sio2OSX;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2DF5317909C3CB2E002DB24A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/markg/Sio2OSX/Sio2OSX;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sio2OSX_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Sio2OSX;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2DF5317A09C3CB2E002DB24A /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE6BF4009C3E63A005748C2 /* Sio2OSX.xcconfig */;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/markg/Sio2OSX/Sio2OSX;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sio2OSX_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = Sio2OSX;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		2DF5317C09C3CB2E002DB24A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		2DF5317D09C3CB2E002DB24A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		2DF5317E09C3CB2E002DB24A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DF5317709C3CB2E002DB24A /* Build configuration list for PBXNativeTarget "Sio2OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DF5317809C3CB2E002DB24A /* Development */,
+				2DF5317909C3CB2E002DB24A /* Deployment */,
+				2DF5317A09C3CB2E002DB24A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2DF5317B09C3CB2E002DB24A /* Build configuration list for PBXProject "Sio2OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DF5317C09C3CB2E002DB24A /* Development */,
+				2DF5317D09C3CB2E002DB24A /* Deployment */,
+				2DF5317E09C3CB2E002DB24A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Modem Tab</title>
+
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body>
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="20%"><img style="width: 108px; height: 136px;" alt="" src="x.png">
+<br>
+</td>
+<td valign="top"><b><font size="+3">Sio2OSX
+Help<br>
+Preferences Window<br>
+Modem Tab </font></b><br>
+<a href="index.html">Introduction</a>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="SerialPort.html">Serial Port</a>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="DiskDrives.html">Disk
+Drives</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<a href="Cassettes.html">Cassettes</a>
+&nbsp; &nbsp; &nbsp; &nbsp; <a href="850Emulation.html">850 Emulation</a>
+<br>
+<a href="PrinterEmulation.html">Printer Emulation</a>
+&nbsp; &nbsp; <a href="preferences.html">Preferences</a>
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="ReleaseHistory.html">Release History</a>
+&nbsp; &nbsp; <a href="Credits.html">Credits</a>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+This tab allows the user to configure the settings of the Internet
+Modem simulation.<br>
+<br>
+<img src="ModemTab.png" alt="" style="width: 729px; height: 489px;"><br>
+<br>
+<b><u>Server Settings:<br>
+</u></b>
+<div style="margin-left: 40px;"><b><u>Server
+Enable and Port</u></b><br>
+This option allows you to chose if the server is enable for the modem
+(allows incoming connections) and which TCP port it uses (23 is the
+default for telnet) if enabled.<br>
+<br>
+<b><u>Server Off Message</u></b><br>
+This option allows you to set the message that is sent to a remote
+telnet client when it tries to connect to the server and the Atari is
+not ready to accept connections (It's DTR line is not raised).<br>
+<br>
+<b><u>Server Busy Message</u></b><br>
+This option allows you to set the message that is sent to a remote
+telnet client when it tries to connect to the server and the Atari is
+already connect to another client or server.<br>
+</div>
+<br>
+<b><u>Internal
+Modem Settings:<br>
+</u></b>
+These settings are used to control the defaults that the modem is set
+to when powered on, or when it receives the ATZ command to reset.<br>
+<div style="margin-left: 40px;"><b><u>Modem
+Echo</u></b><br>
+This option is used to turn the echo of characters from the
+modem on or off. &nbsp;With Echo on, the modem will echo all characters
+it receives from the computer back to the computer, so one can see what
+one types. &nbsp;The default for Echo is on,.<br>
+<br>
+<b><u>AutoAnswer</u></b><br>
+This option is used to determine if the modem automatically answers
+incoming connections (by going to data mode), or if the ATA command is
+required to be issued to answer the call. &nbsp;The default for Auto
+Answer is off.<br>
+<br>
+<b><u>Escape
+Character</u></b><br>
+This option is used to set the character for the escape sequence that
+takes the modem from data mode to command mode. &nbsp;The default is
+enabled and 43, which is the '+' character, so that "+++" will be the
+escape sequence. &nbsp;When disabled, the character is set to 255.<br>
+</div>
+<br>
+<b><u>Stored Dialing Settings:</u></b><br>
+<div style="margin-left: 40px;"><b><u>Address
+and Port</u></b><br>
+These options are used to store internet addresses and ports
+for later use in dialing with the ATDP command. &nbsp;(See the
+description of modem commands on the <a href="850Emulation.html">850
+Emulation</a> page.
+</div>
+</body></html>

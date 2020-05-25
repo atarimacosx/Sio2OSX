@@ -1,0 +1,1262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  <title>Disk Drives</title><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head>
+<body>
+
+
+
+
+
+
+
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+
+      <td valign="top" width="20%"><img style="width: 108px; height: 136px;" src="x.png" alt="">
+
+      <br>
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+      <td valign="top"><b><font size="+3">Sio2OSX
+
+Help<br>
+
+
+
+
+
+
+
+Disk Drives</font></b><br>
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+
+
+      <a href="index.html">Introduction</a>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="SerialPort.html">Serial Port</a>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="DiskDrives.html">Disk
+Drives</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="Cassettes.html">Cassettes</a>
+&nbsp; &nbsp; &nbsp; &nbsp; <a href="850Emulation.html">850 Emulation</a>
+
+<br>
+
+<a href="PrinterEmulation.html">Printer Emulation</a>
+
+&nbsp; &nbsp; <a href="preferences.html">Preferences</a>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="ReleaseHistory.html">Release History</a>
+
+&nbsp; &nbsp; <a href="Credits.html">Credits</a>
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+  
+
+  
+
+  </tbody>
+
+</table>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+The Media Status Window on the Atari800MacX emulator allows you to
+
+control all of the aspects of digital media emulation from one
+
+graphical interface.&nbsp; Besides media management, it allow you
+
+to
+
+control some often used aspects of the emulator as well.&nbsp; If
+
+it is
+
+not displayed at the moment, you can display if by issuing the "Show
+
+Media Status Window" command in the Media menu.&nbsp; The media
+
+status
+
+window looks like this:<br>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+<b><u>Drive Status sections:</u></b><br>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+<div style="margin-left: 40px;"><img src="DiskDriveStatus.png" alt="Atari800MacX Media Status Window" style="width: 322px; height: 96px;"><br>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+The main section of the Sio2OSX window displays 8 disk drives which
+
+each allow you to control one of Sio2OSX's emualted
+
+disk drives.&nbsp; The drive may be turned on/off with
+
+the
+
+on/off button.&nbsp; If the drive is on, you may insert a disk
+
+image or Macintosh directory (see the paragraph on "Sharepoints" later
+
+in this section) by
+
+pressing the Insert button.&nbsp; You also can drag and drop a disk
+
+image file or folder from the Finder to the drive picture to insert the
+
+disk.&nbsp; When an image is inserted, you can write
+
+protect/unprotect
+
+it with the Lock/Unlock button.&nbsp; When the drive is write
+
+protected, a
+
+small lock icon will appear above the lock button.&nbsp; Finally,
+
+you
+
+can drag disks/directories from one drive to another.<br><br>Three
+types of disk image files are support. &nbsp;The standard .atr is
+supported, along with VAPI's .atx files, and .pro copy protected
+images. &nbsp;VAPI support does not work correctly for all image files
+currently in circulation, but supports 95% of them. &nbsp;See <a href="ReleaseHistory.html">Release History</a> for those images known not to work.<br>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+Status/Activity will also be displayed by the drives.&nbsp; The
+
+on/off,
+
+insert/eject, and lock/unlock buttons will light up/darken when disks
+
+are inserted/removed, etc.&nbsp; Also, there are two LED's on the
+
+drive.&nbsp; One indicates power, and the second indicates
+
+read/write
+
+activity, red for write, and green for read.&nbsp; In addition, the
+
+sector the drive is reading or writing will be shown on the disk drive
+
+door. <br>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+If you are using a real disk drive in the SIO chain along with the
+
+Sio2PC cable, you should leave the Sio2OSX drive with the same drive
+
+number as the real drive turned off, so that Sio2OSX does not try to
+
+respond to commands intended for the real disk drive.<br>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<b><u>"Sharepoints":</u></b><br>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+<div style="margin-left: 40px;">Besides using ATR disk images, Sio2OSX
+
+also allows the Atari to access files directly in Mac directories, or a
+
+share point. &nbsp;This will allow ANY Dos on the Atari (even those
+
+that can't handle large drives, such as Atari Dos 2.x) to directly read
+
+and write Macintosh files. &nbsp;In addition, you can change
+
+directories from the Atari by "accessing" the directory file you want
+
+to change into. &nbsp;In Atari DOS or MyDos this means doing a binary
+
+load on the file, in Spartados you can simply type the directory name
+
+or the directory name followed by a '.' if there is not extension. If
+
+you do a directory from the Atari, you will notice a special file as
+
+the first one listed, and it is named "UP". &nbsp;Accessing this file
+
+will move you up one directory on the Macintosh.<br>
+
+
+
+
+
+<br>
+
+
+
+
+
+There are several limitations to this direct file access, and they are the following:<br>
+
+
+
+
+
+<ul>
+
+
+
+
+
+  <li>Only the first 62 files present in the selected Macintosh
+
+directory are accessible from the Atari. &nbsp;This is due to the 64
+
+file limitation on files in a directory on Atari DOS's. &nbsp;From
+
+this, one directory entry is reserved for the "UP" directory, and one
+
+entry is reserved for allowing the Atari to create and write to a new
+
+file.</li>
+
+
+
+
+
+  <li>Only one file may be written to, and one file read from at a time.</li>
+
+
+
+
+
+  <li>Macintosh filenames will be translated to the 8.3 format used for
+
+Atari filenames. &nbsp;This may lead to what appears to be duplicate
+
+filenames from the Atari if you are not careful in naming your files.</li>
+
+
+
+
+
+  <li>The size of a file that may be written is limited to
+
+approximately 78 Kilobytes. &nbsp;If you need to transfer larger files
+
+to a Macintosh directory, you will need to write them to a disk image,
+
+and then use the ATR disk editor from Atari800MacX or a similar program
+
+to transfer the file from the disk image to the Macintosh directory.</li>
+
+
+
+
+
+</ul>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+<b><u>Disk Image pushbuttons:</u><br>
+
+
+
+
+
+
+
+</b>
+
+<blockquote><img src="DiskButtons.png" alt="Disk Image Buttons" style="width: 218px; height: 96px;"><br>
+
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+
+
+This section of the window provides pushbuttons alllowing you to access
+
+some of the common disk functions that are&nbsp;available in the
+
+Disks menu.<br>
+
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+
+
+  <b><u>Save Disk Set Button<br>
+
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+
+
+  </u></b>
+
+  
+
+  
+
+  <blockquote>This button allows the user to save the names of
+
+the
+
+disk
+
+images
+
+that are currently in the drives to a file, to be loaded later.
+
+&nbsp;The
+
+file that the set is save in has an extension of ".set", and it is a
+
+human
+
+readable text file, containing the paths of the image files, or "Empty"
+
+or
+
+"Off" for a drive that has no disk.<br>
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+  <b><u>Load Disk Set Button<br>
+
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+
+
+  </u></b>
+
+  
+
+  
+
+  <blockquote>This button allows the user to load a disk set
+
+saved
+
+earlier
+
+with the Save Disk Set Button. &nbsp;The user is allowed to browse
+
+for
+
+the
+
+set file, displaying files ending in ".set". &nbsp;Sio2OSX
+
+then
+
+loads
+
+the disk images specified in the file into the corresponding drives.
+
+&nbsp;If
+
+a drive in the set file is "Empty" or "Off", no changes are made to the
+
+drive.
+
+&nbsp; This allows the user to load multiple disk sets sequentially.<br>
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+  <b><u>Rotate Disks Button<br>
+
+
+
+
+
+
+
+  </u></b>
+
+  
+
+  
+
+  <blockquote>This button rotates the current inserted floppies
+
+among the
+
+drives.&nbsp; This may be useful for playing multiple disk games.<br>
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+  <u><b>New Disk Image Button<br>
+
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+
+
+  </b></u>
+
+  
+
+  
+
+  <blockquote>This button will display a new window which you may
+
+use to
+
+create a new disk image (.atr only). &nbsp;This new image will be saved in .atr
+
+format.<br>
+
+
+
+
+
+
+
+    <br>
+
+
+
+
+
+
+
+In the Create Disk Image window,&nbsp; you may choose a format of a
+
+disk. Note that not all formats are supported by all Atari DOSes. There
+
+are three standard formats:<br>
+
+
+
+
+
+
+
+    
+
+    
+
+    <ul>
+
+
+
+
+
+
+
+      <li>Single density (40 tracks * 18 sectors/track * 128
+
+bytes/sector
+
+= 90 KB)</li>
+
+
+
+
+
+
+
+      <li>Medium density (40 tracks * 26 sectors/track * 128
+
+bytes/sector
+
+= 130 KB)</li>
+
+
+
+
+
+
+
+      <li>Double density (40 tracks * 18 sectors/track * 256
+
+bytes/sector
+
+= 180 KB)</li>
+
+
+
+
+
+
+
+    
+
+    
+
+    </ul>
+
+
+
+
+
+
+
+You can also select any other format, by clicking Custom and setting
+
+Number of sectors and Bytes per sector. Please make sure your Atari DOS
+
+supports this format, otherwise the image will be unusable.<br>
+
+
+
+
+
+
+
+    <br>
+
+
+
+
+
+
+
+If 256 bytes per sector are selected, you can choose between 128 and
+
+256 Bytes in boot sectors. Physically, boot sectors (first three
+
+sectors on
+
+a disk) are also 256 bytes long, but only 128 are transmitted between
+
+the
+
+Atari and a disk drive (upper halves of sectors are not used). There
+
+are
+
+disk images with 128 bytes in boot sectors and disk images with 256
+
+bytes
+
+in boot sectors. Sio2OSX supports both, but other
+
+emulators
+
+don't. Except some special cases, we recommend 128 for ATR images.<br>
+
+
+
+
+
+
+
+    <br>
+
+
+
+
+
+
+
+If the "Insert New Disk image into drive" checkbox is checked, the
+
+created image will be mounted on the specified drive.<br>
+
+
+
+
+
+
+
+    <br>
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+</blockquote>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+<b><u>Disk Menu:</u></b><br>
+
+
+
+
+
+
+
+<blockquote><img src="DiskMenu.png" alt="Disk Image Buttons" style="width: 293px; height: 146px;"><br>
+
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+
+
+The Disks menu on Sio2OSX allows you to insert and
+
+remove digital media into the emulator, the same way you would on a
+
+real Atari. &nbsp;It
+
+has the following menu selections:<br>
+
+  <br>
+
+  <b><u>Insert Floppy (cmd-1 through cmd-8)</u><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </b>
+
+  <blockquote>This sub-menu allows you to insert an image file or a Mac folder (as a Sharepoint) into any
+
+of the
+
+8 emulated disk drives. &nbsp;A .atr, .dcm, or .xfd file may also be
+
+loaded
+
+into Sio2OSX by double-clicking it in the finder, or dragging it
+
+to
+
+the&nbsp;Sio2OSX Icon.<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <b><u>Remove Floppy (ctrl-cmd-1 through ctrl-cmd-8, and ctrl-cmd-0)</u><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </b>
+
+  <blockquote>This sub-menu allows you to remove a image file or Sharepoint from one of
+
+the emulated disk drives, or you may empty all of the drives at once.<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <b><u>Rotate Floppies<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </u></b>
+
+  <blockquote>This menu item rotates the current inserted floppies among
+
+the drives.&nbsp; This may be useful for playing multiple disk games.<br>
+
+  </blockquote>
+
+  <b><u>Save Disk Set Button<br>
+
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+
+
+  </u></b>
+
+  
+
+  
+
+  <blockquote>This&nbsp;menu item allows the user to save the names of
+
+the
+
+disk
+
+images
+
+that are currently in the drives to a file, to be loaded later.
+
+&nbsp;The
+
+file that the set is save in has an extension of ".set", and it is a
+
+human
+
+readable text file, containing the paths of the image files, or "Empty"
+
+or
+
+"Off" for a drive that has no disk.<br>
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+  <b><u>Load Disk Set Button<br>
+
+
+
+
+
+
+
+  <br>
+
+
+
+
+
+
+
+  </u></b>
+
+  
+
+  
+
+  <blockquote>This&nbsp;menu item allows the user to load a disk set
+
+saved
+
+earlier
+
+with the Save Disk Set Button. &nbsp;The user is allowed to browse
+
+for
+
+the
+
+set file, displaying files ending in ".set". &nbsp;Sio2OSX
+
+then
+
+loads
+
+the disk images specified in the file into the corresponding drives.
+
+&nbsp;If
+
+a drive in the set file is "Empty" or "Off", no changes are made to the
+
+drive.
+
+&nbsp; This allows the user to load multiple disk sets sequentially.<br>
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <u><b>New Floppy Image<br>
+
+
+
+
+
+
+
+
+
+
+
+  </b></u>
+
+  <blockquote>This item will display a new window which you may use to
+
+create a new disk image. &nbsp;This new image will be saved in .atr
+
+format. &nbsp;(See the New Disk Image Button description above).<br>
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+  </blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</blockquote>
+
+
+
+
+
+
+
+</body></html>

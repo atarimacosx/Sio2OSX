@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="101000" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MediaManager">
+            <connections>
+                <outlet property="cassCurrentField" destination="1379" id="1382"/>
+                <outlet property="cassFastForwardButton" destination="1366" id="1399"/>
+                <outlet property="cassImage" destination="1376" id="1381"/>
+                <outlet property="cassInsertButton" destination="1368" id="1384"/>
+                <outlet property="cassMaxField" destination="1378" id="1383"/>
+                <outlet property="cassMinField" destination="1377" id="1396"/>
+                <outlet property="cassNameField" destination="1374" id="1380"/>
+                <outlet property="cassPlayButton" destination="1365" id="1385"/>
+                <outlet property="cassProgressIndicator" destination="1372" id="1386"/>
+                <outlet property="cassRewindButton" destination="1367" id="1398"/>
+                <outlet property="cassStatusField" destination="1394" id="1395"/>
+                <outlet property="cassToStartButton" destination="1375" id="1397"/>
+                <outlet property="d1DiskImageInsertButton" destination="783" id="800"/>
+                <outlet property="d1DiskImageLockView" destination="953" id="954"/>
+                <outlet property="d1DiskImageNameField" destination="791" id="801"/>
+                <outlet property="d1DiskImageNumberField" destination="789" id="1056"/>
+                <outlet property="d1DiskImagePowerButton" destination="787" id="802"/>
+                <outlet property="d1DiskImageProtectButton" destination="792" id="803"/>
+                <outlet property="d1DiskImageSectorField" destination="935" id="936"/>
+                <outlet property="d1DiskImageView" destination="788" id="799"/>
+                <outlet property="d2DiskImageInsertButton" destination="816" id="863"/>
+                <outlet property="d2DiskImageLockView" destination="971" id="978"/>
+                <outlet property="d2DiskImageNameField" destination="818" id="862"/>
+                <outlet property="d2DiskImageNumberField" destination="814" id="1057"/>
+                <outlet property="d2DiskImagePowerButton" destination="819" id="864"/>
+                <outlet property="d2DiskImageProtectButton" destination="817" id="865"/>
+                <outlet property="d2DiskImageSectorField" destination="937" id="944"/>
+                <outlet property="d2DiskImageView" destination="815" id="911"/>
+                <outlet property="d3DiskImageInsertButton" destination="825" id="868"/>
+                <outlet property="d3DiskImageLockView" destination="972" id="979"/>
+                <outlet property="d3DiskImageNameField" destination="820" id="866"/>
+                <outlet property="d3DiskImageNumberField" destination="824" id="1058"/>
+                <outlet property="d3DiskImagePowerButton" destination="822" id="867"/>
+                <outlet property="d3DiskImageProtectButton" destination="823" id="1092"/>
+                <outlet property="d3DiskImageSectorField" destination="938" id="945"/>
+                <outlet property="d3DiskImageView" destination="821" id="912"/>
+                <outlet property="d4DiskImageInsertButton" destination="827" id="871"/>
+                <outlet property="d4DiskImageLockView" destination="973" id="980"/>
+                <outlet property="d4DiskImageNameField" destination="828" id="870"/>
+                <outlet property="d4DiskImageNumberField" destination="830" id="1059"/>
+                <outlet property="d4DiskImagePowerButton" destination="831" id="872"/>
+                <outlet property="d4DiskImageProtectButton" destination="826" id="873"/>
+                <outlet property="d4DiskImageSectorField" destination="939" id="946"/>
+                <outlet property="d4DiskImageView" destination="829" id="913"/>
+                <outlet property="d5DiskImageInsertButton" destination="1214" id="1269"/>
+                <outlet property="d5DiskImageLockView" destination="1237" id="1281"/>
+                <outlet property="d5DiskImageNameField" destination="1212" id="1261"/>
+                <outlet property="d5DiskImageNumberField" destination="1211" id="1265"/>
+                <outlet property="d5DiskImagePowerButton" destination="1209" id="1273"/>
+                <outlet property="d5DiskImageProtectButton" destination="1213" id="1277"/>
+                <outlet property="d5DiskImageSectorField" destination="1233" id="1289"/>
+                <outlet property="d5DiskImageView" destination="1210" id="1285"/>
+                <outlet property="d6DiskImageInsertButton" destination="1217" id="1270"/>
+                <outlet property="d6DiskImageLockView" destination="1238" id="1282"/>
+                <outlet property="d6DiskImageNameField" destination="1219" id="1262"/>
+                <outlet property="d6DiskImageNumberField" destination="1215" id="1266"/>
+                <outlet property="d6DiskImagePowerButton" destination="1220" id="1274"/>
+                <outlet property="d6DiskImageProtectButton" destination="1218" id="1278"/>
+                <outlet property="d6DiskImageSectorField" destination="1234" id="1293"/>
+                <outlet property="d6DiskImageView" destination="1216" id="1286"/>
+                <outlet property="d7DiskImageInsertButton" destination="1226" id="1271"/>
+                <outlet property="d7DiskImageLockView" destination="1239" id="1283"/>
+                <outlet property="d7DiskImageNameField" destination="1221" id="1263"/>
+                <outlet property="d7DiskImageNumberField" destination="1225" id="1267"/>
+                <outlet property="d7DiskImagePowerButton" destination="1223" id="1275"/>
+                <outlet property="d7DiskImageProtectButton" destination="1224" id="1279"/>
+                <outlet property="d7DiskImageSectorField" destination="1235" id="1291"/>
+                <outlet property="d7DiskImageView" destination="1222" id="1287"/>
+                <outlet property="d8DiskImageInsertButton" destination="1228" id="1272"/>
+                <outlet property="d8DiskImageLockView" destination="1240" id="1284"/>
+                <outlet property="d8DiskImageNameField" destination="1229" id="1264"/>
+                <outlet property="d8DiskImageNumberField" destination="1231" id="1268"/>
+                <outlet property="d8DiskImagePowerButton" destination="1232" id="1276"/>
+                <outlet property="d8DiskImageProtectButton" destination="1227" id="1280"/>
+                <outlet property="d8DiskImageSectorField" destination="1236" id="1292"/>
+                <outlet property="d8DiskImageView" destination="1230" id="1288"/>
+                <outlet property="diskFmtCusBytesPulldown" destination="481" id="496"/>
+                <outlet property="diskFmtCusSecField" destination="461" id="495"/>
+                <outlet property="diskFmtDDBytesPulldown" destination="446" id="494"/>
+                <outlet property="diskFmtInsertDrivePulldown" destination="465" id="500"/>
+                <outlet property="diskFmtInsertNewButton" destination="464" id="497"/>
+                <outlet property="diskFmtMatrix" destination="439" id="504"/>
+                <outlet property="endButton" destination="1403" id="1405"/>
+                <outlet property="error2Button" destination="1304" id="1309"/>
+                <outlet property="error2Field1" destination="1305" id="1307"/>
+                <outlet property="error2Field2" destination="1306" id="1308"/>
+                <outlet property="errorButton" destination="556" id="557"/>
+                <outlet property="errorField" destination="555" id="666"/>
+                <outlet property="expiredButton" destination="1315" id="1316"/>
+                <outlet property="printerImageNameField" destination="1174" id="1180"/>
+                <outlet property="printerImageView" destination="1172" id="1173"/>
+                <outlet property="printerPreviewButton" destination="1157" id="1181"/>
+                <outlet property="resetPrinterButton" destination="1325" id="1327"/>
+                <outlet property="selectAtari1020Item" destination="1164" id="1298"/>
+                <outlet property="selectAtari825Item" destination="1163" id="1297"/>
+                <outlet property="selectEpsonItem" destination="1159" id="1299"/>
+                <outlet property="selectPrinterPulldown" destination="1158" id="1182"/>
+                <outlet property="selectTextItem" destination="1162" id="1296"/>
+                <outlet property="serial850ImageView" destination="1426" id="1429"/>
+                <outlet property="serial850PowerButton" destination="1425" id="1427"/>
+                <outlet property="sioPortPulldown" destination="1352" id="1357"/>
+                <outlet property="speedField" destination="1322" id="1324"/>
+                <outlet property="userKeyField" destination="1415" id="1419"/>
+                <outlet property="userNameField" destination="1414" id="1418"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Create Disk Image" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="370" userLabel="NewDisk">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="447" y="185" width="323" height="428"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="374">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="428"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box title="Disk Format" id="437">
+                        <rect key="frame" x="20" y="151" width="283" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <view key="contentView" id="yLV-JS-YBH">
+                            <rect key="frame" x="2" y="2" width="279" height="250"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" id="439">
+                                    <rect key="frame" x="12" y="79" width="176" height="162"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="cellSize" width="176" height="18"/>
+                                    <size key="intercellSpacing" width="4" height="30"/>
+                                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="1555">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <cells>
+                                        <column>
+                                            <buttonCell type="radio" title="Single density (90KB)" imagePosition="left" alignment="left" state="on" inset="2" id="442">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <buttonCell type="radio" title="Medium density (130KB)" imagePosition="left" alignment="left" tag="1" inset="2" id="443">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <buttonCell type="radio" title="Double density (180KB)" imagePosition="left" alignment="left" tag="2" inset="2" id="444">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <buttonCell type="radio" title="Custom" imagePosition="left" alignment="left" tag="3" inset="2" id="445">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </column>
+                                    </cells>
+                                    <connections>
+                                        <action selector="miscUpdate:" target="-2" id="485"/>
+                                    </connections>
+                                </matrix>
+                                <popUpButton verticalHuggingPriority="750" id="446">
+                                    <rect key="frame" x="42" y="100" width="86" height="26"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <popUpButtonCell key="cell" type="push" title="128" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="449" id="1547">
+                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                        <menu key="menu" title="OtherViews" id="447">
+                                            <items>
+                                                <menuItem title="128" state="on" id="449"/>
+                                                <menuItem title="256" id="450"/>
+                                            </items>
+                                        </menu>
+                                    </popUpButtonCell>
+                                    <connections>
+                                        <action selector="miscUpdate:" target="-2" id="487"/>
+                                    </connections>
+                                </popUpButton>
+                                <textField verticalHuggingPriority="750" id="461">
+                                    <rect key="frame" x="45" y="51" width="80" height="22"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="1548">
+                                        <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="665">
+                                            <attributedString key="attributedStringForNil"/>
+                                            <attributedString key="attributedStringForNotANumber">
+                                                <fragment content="NaN"/>
+                                            </attributedString>
+                                            <attributedString key="attributedStringForZero">
+                                                <fragment content="0"/>
+                                            </attributedString>
+                                            <decimal key="minimum" value="1"/>
+                                            <decimal key="maximum" value="65535"/>
+                                        </numberFormatter>
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <action selector="miscUpdate:" target="-2" id="486"/>
+                                    </connections>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="479">
+                                    <rect key="frame" x="130" y="53" width="138" height="17"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1549">
+                                        <font key="font" metaFont="system"/>
+                                        <string key="title">Number of Sectors
+
+Sectors
+</string>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <popUpButton verticalHuggingPriority="750" id="481">
+                                    <rect key="frame" x="42" y="19" width="86" height="26"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <popUpButtonCell key="cell" type="push" title="256" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="483" id="1550">
+                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                        <menu key="menu" title="OtherViews" id="480">
+                                            <items>
+                                                <menuItem title="128" id="482"/>
+                                                <menuItem title="256" state="on" id="483"/>
+                                            </items>
+                                        </menu>
+                                    </popUpButtonCell>
+                                    <connections>
+                                        <action selector="miscUpdate:" target="-2" id="488"/>
+                                    </connections>
+                                </popUpButton>
+                                <textField verticalHuggingPriority="750" id="484">
+                                    <rect key="frame" x="130" y="25" width="114" height="17"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1551">
+                                        <font key="font" metaFont="system"/>
+                                        <string key="title">Bytes per Sector
+</string>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="506">
+                                    <rect key="frame" x="130" y="106" width="138" height="17"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1552">
+                                        <font key="font" metaFont="system"/>
+                                        <string key="title">Bytes per Boot Sector
+</string>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <box title="Attach to" id="462">
+                        <rect key="frame" x="18" y="60" width="283" height="84"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <view key="contentView" id="NgM-wG-xSW">
+                            <rect key="frame" x="2" y="2" width="279" height="64"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button id="464">
+                                    <rect key="frame" x="18" y="37" width="225" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <buttonCell key="cell" type="check" title="Insert new disk image into drive" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="1553">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="miscUpdate:" target="-2" id="489"/>
+                                    </connections>
+                                </button>
+                                <popUpButton verticalHuggingPriority="750" id="465">
+                                    <rect key="frame" x="39" y="7" width="70" height="26"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <popUpButtonCell key="cell" type="push" title="8" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="474" id="1554">
+                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                        <menu key="menu" title="OtherViews" id="466">
+                                            <items>
+                                                <menuItem title="1" id="468"/>
+                                                <menuItem title="2" id="469"/>
+                                                <menuItem title="3" id="467"/>
+                                                <menuItem title="4" id="470"/>
+                                                <menuItem title="5" id="471"/>
+                                                <menuItem title="6" id="472"/>
+                                                <menuItem title="7" id="473"/>
+                                                <menuItem title="8" state="on" id="474"/>
+                                            </items>
+                                        </menu>
+                                    </popUpButtonCell>
+                                    <connections>
+                                        <action selector="miscUpdate:" target="-2" id="490"/>
+                                    </connections>
+                                </popUpButton>
+                            </subviews>
+                        </view>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <button verticalHuggingPriority="750" id="476">
+                        <rect key="frame" x="223" y="12" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="1431">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelDisk:" target="-2" id="492"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="477">
+                        <rect key="frame" x="139" y="12" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Create" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="1432">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent"></string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="createDisk:" target="-2" id="491"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+        </window>
+        <window title="Error" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="546" userLabel="Error">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="602" width="386" height="122"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="539">
+                <rect key="frame" x="1" y="1" width="386" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="555">
+                        <rect key="frame" x="95" y="66" width="274" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Unable to Mount Disk Image!" id="1433">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="556">
+                        <rect key="frame" x="161" y="12" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="1434">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="errorOK:" target="-2" id="558"/>
+                        </connections>
+                    </button>
+                    <imageView id="559">
+                        <rect key="frame" x="15" y="45" width="75" height="58"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Sio2OSX" id="1435"/>
+                    </imageView>
+                </subviews>
+            </view>
+        </window>
+        <window title="Sio2OSX" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="755" userLabel="MediaStatus" customClass="Atari800MediaWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="220" y="333" width="652" height="494"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="744">
+                <rect key="frame" x="1" y="1" width="652" height="494"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button id="1088">
+                        <rect key="frame" x="5" y="27" width="207" height="20"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" title="Save Disk Set" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" inset="2" id="1470">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskSetSave:" target="-2" id="1091"/>
+                        </connections>
+                    </button>
+                    <button id="1087">
+                        <rect key="frame" x="5" y="49" width="207" height="20"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" title="Load Disk Set" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" inset="2" id="1469">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskSetLoad:" target="-2" id="1090"/>
+                        </connections>
+                    </button>
+                    <button id="1086">
+                        <rect key="frame" x="5" y="71" width="207" height="20"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" title="Rotate Disks" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" inset="2" id="1468">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskRotate:" target="-2" id="1089"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="787">
+                        <rect key="frame" x="-2" y="397" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="1437">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusPower:" target="-2" id="805"/>
+                        </connections>
+                    </button>
+                    <imageView id="788" customClass="Atari800ImageView">
+                        <rect key="frame" x="3" y="453" width="77" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1438"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" id="789">
+                        <rect key="frame" x="18" y="441" width="49" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Drive D1" id="1439">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="791">
+                        <rect key="frame" x="84" y="406" width="239" height="79"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Off" id="1440">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="792">
+                        <rect key="frame" x="32" y="397" width="53" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lock" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" inset="2" id="1441">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusProtect:" target="-2" id="807"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="783">
+                        <rect key="frame" x="13" y="416" width="57" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Insert" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" inset="2" id="1436">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusChange:" target="-2" id="804"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="814">
+                        <rect key="frame" x="18" y="338" width="47" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1442">
+                            <font key="font" metaFont="label"/>
+                            <string key="title">Drive D2
+</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView tag="1" id="815" customClass="Atari800ImageView">
+                        <rect key="frame" x="3" y="351" width="77" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1443"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" tag="1" id="816">
+                        <rect key="frame" x="13" y="314" width="57" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Insert" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="1" inset="2" id="1444">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusChange:" target="-2" id="891"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="1" id="817">
+                        <rect key="frame" x="32" y="295" width="53" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lock" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="1" inset="2" id="1445">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusProtect:" target="-2" id="892"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="818">
+                        <rect key="frame" x="84" y="304" width="239" height="85"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Off" id="1446">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="1" id="819">
+                        <rect key="frame" x="-2" y="295" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" tag="1" inset="2" id="1447">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusPower:" target="-2" id="890"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="820">
+                        <rect key="frame" x="84" y="212" width="239" height="75"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Off" id="1448">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView tag="2" id="821" customClass="Atari800ImageView">
+                        <rect key="frame" x="2" y="254" width="77" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1449"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" tag="2" id="822">
+                        <rect key="frame" x="-3" y="198" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" tag="2" inset="2" id="1450">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusPower:" target="-2" id="893"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="2" id="823">
+                        <rect key="frame" x="31" y="198" width="53" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lock" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="2" inset="2" id="1451">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusProtect:" target="-2" id="895"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="824">
+                        <rect key="frame" x="19" y="242" width="48" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Drive D3" id="1452">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="2" id="825">
+                        <rect key="frame" x="12" y="217" width="57" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Insert" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="2" inset="2" id="1453">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusChange:" target="-2" id="894"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="3" id="826">
+                        <rect key="frame" x="34" y="99" width="53" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lock" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="3" inset="2" id="1454">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusProtect:" target="-2" id="898"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="3" id="827">
+                        <rect key="frame" x="15" y="118" width="57" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Insert" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="3" inset="2" id="1455">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusChange:" target="-2" id="897"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="828">
+                        <rect key="frame" x="82" y="108" width="239" height="82"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Off" id="1456">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView tag="3" id="829" customClass="Atari800ImageView">
+                        <rect key="frame" x="5" y="155" width="77" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1457"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" id="830">
+                        <rect key="frame" x="20" y="143" width="47" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Drive D4" id="1458">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="3" id="831">
+                        <rect key="frame" x="0.0" y="99" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" tag="3" inset="2" id="1459">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusPower:" target="-2" id="896"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="935" customClass="Atari800DriveTextField">
+                        <rect key="frame" x="0.0" y="465" width="83" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="1460">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" tag="1" id="937" customClass="Atari800DriveTextField">
+                        <rect key="frame" x="0.0" y="364" width="83" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" tag="1" id="1461">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" tag="2" id="938" customClass="Atari800DriveTextField">
+                        <rect key="frame" x="-1" y="267" width="83" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" tag="2" id="1462">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" tag="3" id="939" customClass="Atari800DriveTextField">
+                        <rect key="frame" x="2" y="168" width="83" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" tag="3" id="1463">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView id="953">
+                        <rect key="frame" x="67" y="427" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="1464"/>
+                    </imageView>
+                    <box horizontalHuggingPriority="750" boxType="separator" id="960">
+                        <rect key="frame" x="321" y="99" width="5" height="406"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <imageView id="971">
+                        <rect key="frame" x="67" y="325" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="1465"/>
+                    </imageView>
+                    <imageView id="972">
+                        <rect key="frame" x="66" y="228" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="1466"/>
+                    </imageView>
+                    <imageView id="973">
+                        <rect key="frame" x="69" y="129" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="1467"/>
+                    </imageView>
+                    <button id="1093">
+                        <rect key="frame" x="5" y="5" width="207" height="20"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" title="New Disk Img" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" inset="2" id="1471">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showCreatePanel:" target="-2" id="1198"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="1157">
+                        <rect key="frame" x="428" y="-2" width="70" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Preview" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="1472">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showPrinterOutput:" target="1168" id="1169"/>
+                        </connections>
+                    </button>
+                    <popUpButton id="1158">
+                        <rect key="frame" x="462" y="25" width="69" height="21"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <popUpButtonCell key="cell" type="bevel" title="Select" bezelStyle="regularSquare" alignment="left" controlSize="small" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" pullsDown="YES" preferredEdge="maxY" selectedItem="1161" id="1473">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="1160">
+                                <items>
+                                    <menuItem title="Select" hidden="YES" id="1161"/>
+                                    <menuItem title="Text" id="1162">
+                                        <connections>
+                                            <action selector="onSelectPrinter:" target="1168" id="1176"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Atari 825" tag="1" id="1163">
+                                        <connections>
+                                            <action selector="onSelectPrinter:" target="1168" id="1177"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Atari 1020" tag="2" id="1164">
+                                        <connections>
+                                            <action selector="onSelectPrinter:" target="1168" id="1178"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Epson FX-80" tag="3" id="1159">
+                                        <connections>
+                                            <action selector="onSelectPrinter:" target="1168" id="1179"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <imageView tag="8" id="1172" customClass="Atari800ImageView">
+                        <rect key="frame" x="467" y="50" width="57" height="35"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1474"/>
+                    </imageView>
+                    <box verticalHuggingPriority="750" boxType="separator" id="1194">
+                        <rect key="frame" x="0.0" y="395" width="653" height="5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <box verticalHuggingPriority="750" boxType="separator" id="1203">
+                        <rect key="frame" x="0.0" y="293" width="653" height="5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <box verticalHuggingPriority="750" boxType="separator" id="1205">
+                        <rect key="frame" x="0.0" y="196" width="653" height="5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <box verticalHuggingPriority="750" boxType="separator" id="1207">
+                        <rect key="frame" x="0.0" y="97" width="653" height="5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <button verticalHuggingPriority="750" tag="4" id="1209">
+                        <rect key="frame" x="322" y="397" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" tag="4" inset="2" id="1476">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusPower:" target="-2" id="1249"/>
+                        </connections>
+                    </button>
+                    <imageView tag="4" id="1210" customClass="Atari800ImageView">
+                        <rect key="frame" x="327" y="453" width="77" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1477"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" id="1211">
+                        <rect key="frame" x="342" y="441" width="47" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1478">
+                            <font key="font" metaFont="label"/>
+                            <string key="title">Drive D5
+</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1212">
+                        <rect key="frame" x="412" y="406" width="239" height="79"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Off" id="1479">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="4" id="1213">
+                        <rect key="frame" x="356" y="397" width="53" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lock" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="4" inset="2" id="1480">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusProtect:" target="-2" id="1257"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="4" id="1214">
+                        <rect key="frame" x="337" y="416" width="57" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Insert" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="4" inset="2" id="1481">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusChange:" target="-2" id="1253"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="1215">
+                        <rect key="frame" x="342" y="338" width="47" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1482">
+                            <font key="font" metaFont="label"/>
+                            <string key="title">Drive D6
+</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView tag="5" id="1216" customClass="Atari800ImageView">
+                        <rect key="frame" x="327" y="351" width="77" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1483"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" tag="5" id="1217">
+                        <rect key="frame" x="337" y="314" width="57" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Insert" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="5" inset="2" id="1484">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusChange:" target="-2" id="1254"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="5" id="1218">
+                        <rect key="frame" x="356" y="295" width="53" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lock" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="5" inset="2" id="1485">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusProtect:" target="-2" id="1258"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="1219">
+                        <rect key="frame" x="412" y="304" width="239" height="85"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Off" id="1486">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="5" id="1220">
+                        <rect key="frame" x="322" y="295" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" tag="5" inset="2" id="1487">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusPower:" target="-2" id="1250"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="1221">
+                        <rect key="frame" x="412" y="212" width="239" height="75"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Off" id="1488">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView tag="6" id="1222" customClass="Atari800ImageView">
+                        <rect key="frame" x="326" y="254" width="77" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1489"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" tag="6" id="1223">
+                        <rect key="frame" x="321" y="198" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" tag="6" inset="2" id="1490">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusPower:" target="-2" id="1251"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="6" id="1224">
+                        <rect key="frame" x="355" y="198" width="53" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lock" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="6" inset="2" id="1491">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusProtect:" target="-2" id="1259"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="1225">
+                        <rect key="frame" x="341" y="242" width="47" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Drive D7" id="1492">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="6" id="1226">
+                        <rect key="frame" x="336" y="217" width="57" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Insert" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="6" inset="2" id="1493">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusChange:" target="-2" id="1255"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="7" id="1227">
+                        <rect key="frame" x="358" y="99" width="53" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lock" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="7" inset="2" id="1494">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusProtect:" target="-2" id="1260"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="7" id="1228">
+                        <rect key="frame" x="339" y="118" width="57" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Insert" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" tag="7" inset="2" id="1495">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusChange:" target="-2" id="1256"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="1229">
+                        <rect key="frame" x="412" y="108" width="239" height="82"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Off" id="1496">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView tag="7" id="1230" customClass="Atari800ImageView">
+                        <rect key="frame" x="329" y="155" width="77" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1497"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" id="1231">
+                        <rect key="frame" x="344" y="143" width="47" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Drive D8" id="1498">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="7" id="1232">
+                        <rect key="frame" x="324" y="99" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" tag="7" inset="2" id="1499">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="diskStatusPower:" target="-2" id="1252"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" tag="4" id="1233" customClass="Atari800DriveTextField">
+                        <rect key="frame" x="324" y="465" width="83" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" tag="4" id="1500">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" tag="5" id="1234" customClass="Atari800DriveTextField">
+                        <rect key="frame" x="324" y="364" width="83" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" tag="5" id="1501">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" tag="6" id="1235" customClass="Atari800DriveTextField">
+                        <rect key="frame" x="323" y="267" width="83" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" tag="6" id="1502">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" tag="7" id="1236" customClass="Atari800DriveTextField">
+                        <rect key="frame" x="326" y="168" width="83" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" tag="7" id="1503">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView id="1237">
+                        <rect key="frame" x="391" y="427" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="1504"/>
+                    </imageView>
+                    <imageView id="1238">
+                        <rect key="frame" x="391" y="325" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="1505"/>
+                    </imageView>
+                    <imageView id="1239">
+                        <rect key="frame" x="390" y="228" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="1506"/>
+                    </imageView>
+                    <imageView id="1240">
+                        <rect key="frame" x="393" y="129" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="1507"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" id="1294">
+                        <rect key="frame" x="476" y="85" width="47" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Printer" id="1508">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box horizontalHuggingPriority="750" boxType="separator" id="1320">
+                        <rect key="frame" x="424" y="-4" width="5" height="104"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <textField verticalHuggingPriority="750" id="1322">
+                        <rect key="frame" x="282" y="55" width="73" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="1509">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.29456055164337158" green="1" blue="0.16769599914550781" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1323">
+                        <rect key="frame" x="289" y="79" width="66" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="SIO Speed" id="1510">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box horizontalHuggingPriority="750" boxType="separator" id="1318">
+                        <rect key="frame" x="215" y="-2" width="5" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <button verticalHuggingPriority="750" id="1325">
+                        <rect key="frame" x="494" y="-2" width="70" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="1511">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="onResetPrinter:" target="1168" id="1326"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="1174">
+                        <rect key="frame" x="527" y="49" width="40" height="30"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Text" id="1475">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1351">
+                        <rect key="frame" x="293" y="32" width="66" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="SIO Port" id="1512">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" id="1352">
+                        <rect key="frame" x="219" y="9" width="207" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <popUpButtonCell key="cell" type="push" title="None" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="1356" id="1513">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="1353">
+                                <items>
+                                    <menuItem title="None" state="on" id="1356"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="modemChange:" target="-2" id="1358"/>
+                        </connections>
+                    </popUpButton>
+                    <box horizontalHuggingPriority="750" boxType="separator" id="1422">
+                        <rect key="frame" x="567" y="-2" width="5" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <textField verticalHuggingPriority="750" id="1424">
+                        <rect key="frame" x="597" y="85" width="47" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="850" id="1514">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="7" id="1425">
+                        <rect key="frame" x="587" y="22" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="On" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" tag="7" inset="2" id="1515">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="serial850Power:" target="-2" id="1428"/>
+                        </connections>
+                    </button>
+                    <imageView tag="8" id="1426">
+                        <rect key="frame" x="581" y="54" width="57" height="23"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="1516"/>
+                    </imageView>
+                </subviews>
+            </view>
+        </window>
+        <customObject id="1168" userLabel="PrintOutputController" customClass="PrintOutputController"/>
+        <window title="Error" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="1301" userLabel="Error2">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="303" y="373" width="386" height="122"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="1302">
+                <rect key="frame" x="1" y="1" width="386" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="1305">
+                        <rect key="frame" x="95" y="76" width="274" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Unable to Mount Disk Image!" id="1519">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="1304">
+                        <rect key="frame" x="161" y="12" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="1518">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="error2OK:" target="-2" id="1310"/>
+                        </connections>
+                    </button>
+                    <imageView id="1303">
+                        <rect key="frame" x="15" y="45" width="75" height="58"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Sio2OSX" id="1517"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" id="1306">
+                        <rect key="frame" x="95" y="55" width="274" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Unable to Mount Disk Image!" id="1520">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="Program Expired" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="1311" userLabel="Expired">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="164" y="439" width="386" height="122"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="1312">
+                <rect key="frame" x="1" y="1" width="386" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="1314">
+                        <rect key="frame" x="74" y="48" width="274" height="55"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="1522">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">This test version of Sio2OSX has expired.
+Please contact the author
+for a new test version.</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="1315">
+                        <rect key="frame" x="161" y="12" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="1523">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="expiredOK:" target="-2" id="1317"/>
+                        </connections>
+                    </button>
+                    <imageView id="1313">
+                        <rect key="frame" x="15" y="45" width="75" height="58"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Sio2OSX" id="1521"/>
+                    </imageView>
+                </subviews>
+            </view>
+        </window>
+        <window title="Cassette Player" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="1359" userLabel="Cassette">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="252" y="391" width="416" height="197"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="1360">
+                <rect key="frame" x="1" y="1" width="416" height="197"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" id="1363">
+                        <rect key="frame" x="296" y="12" width="106" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="1524">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cassDone:" target="-2" id="1392"/>
+                        </connections>
+                    </button>
+                    <button id="1365">
+                        <rect key="frame" x="147" y="10" width="73" height="72"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="PlayOff" imagePosition="above" alignment="center" alternateImage="PlayOn" enabled="NO" inset="2" id="1525">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cassPlay:" target="-2" id="1389"/>
+                        </connections>
+                    </button>
+                    <button id="1366">
+                        <rect key="frame" x="211" y="10" width="73" height="72"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="FastForwardOff" imagePosition="above" alignment="center" alternateImage="FastForwardOn" continuous="YES" enabled="NO" inset="2" id="1526">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cassFastForward:" target="-2" id="1390"/>
+                        </connections>
+                    </button>
+                    <button id="1367">
+                        <rect key="frame" x="83" y="10" width="73" height="72"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="RewindOff" imagePosition="above" alignment="center" alternateImage="RewindOn" continuous="YES" enabled="NO" inset="2" id="1527">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cassRewind:" target="-2" id="1388"/>
+                        </connections>
+                    </button>
+                    <button id="1368">
+                        <rect key="frame" x="323" y="130" width="73" height="23"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" title="Insert" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" inset="2" id="1528">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cassInsert:" target="-2" id="1391"/>
+                        </connections>
+                    </button>
+                    <progressIndicator verticalHuggingPriority="750" maxValue="100" bezeled="NO" style="bar" id="1372">
+                        <rect key="frame" x="25" y="102" width="373" height="20"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </progressIndicator>
+                    <textField verticalHuggingPriority="750" id="1374">
+                        <rect key="frame" x="24" y="130" width="294" height="47"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="Empty" id="1529">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button id="1375">
+                        <rect key="frame" x="21" y="10" width="73" height="72"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ToStartOff" imagePosition="above" alignment="center" alternateImage="ToStartOn" enabled="NO" inset="2" id="1530">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cassToStart:" target="-2" id="1387"/>
+                        </connections>
+                    </button>
+                    <imageView tag="8" id="1376" customClass="Atari800ImageView">
+                        <rect key="frame" x="330" y="159" width="57" height="35"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="cassetteoff" id="1531"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" id="1377">
+                        <rect key="frame" x="24" y="90" width="58" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="-" id="1532">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1378">
+                        <rect key="frame" x="341" y="89" width="58" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="-" id="1533">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1379">
+                        <rect key="frame" x="242" y="90" width="35" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="-" id="1534">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1393">
+                        <rect key="frame" x="159" y="90" width="81" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Current Block:" id="1535">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1394">
+                        <rect key="frame" x="295" y="51" width="112" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="1536">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="Program Unregistered" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="1400" userLabel="TimedOut">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="184" y="419" width="386" height="122"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="1401">
+                <rect key="frame" x="1" y="1" width="386" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="1404">
+                        <rect key="frame" x="74" y="48" width="274" height="55"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="1539">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">The unregistered version of Sio2OSX
+will only run for 5 minutes.
+Please register.
+for a new test version.</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="1403">
+                        <rect key="frame" x="161" y="12" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="1538">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="timedoutOK:" target="-2" id="1406"/>
+                        </connections>
+                    </button>
+                    <imageView id="1402">
+                        <rect key="frame" x="15" y="45" width="75" height="58"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Sio2OSX" id="1537"/>
+                    </imageView>
+                </subviews>
+            </view>
+        </window>
+        <window title="Enter Registration" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="1407" userLabel="Registration" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="236" y="403" width="537" height="186"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="1408">
+                <rect key="frame" x="1" y="9" width="537" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="1410">
+                        <rect key="frame" x="21" y="136" width="506" height="30"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Enter the registration information you received, then press &quot;Validate&quot;" id="1541">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="1409">
+                        <rect key="frame" x="270" y="12" width="112" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Validate" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="1540">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="regValidate:" target="-2" id="1421"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="1412">
+                        <rect key="frame" x="158" y="12" width="112" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="1543">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="regCancel:" target="-2" id="1420"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="1413">
+                        <rect key="frame" x="29" y="100" width="46" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Name" id="1544">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1411">
+                        <rect key="frame" x="29" y="69" width="37" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Code" id="1542">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1414">
+                        <rect key="frame" x="80" y="98" width="414" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="1545">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="1415" id="1417"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1415">
+                        <rect key="frame" x="80" y="67" width="414" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="1546">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="1414" id="1416"/>
+                        </connections>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <view id="959">
+            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <view id="1195">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <view id="1204">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <view id="1206">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <view id="1208">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <view id="1319">
+            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <view id="1321">
+            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <view id="1423">
+            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FastForwardOff" width="64" height="64"/>
+        <image name="FastForwardOn" width="64" height="64"/>
+        <image name="PlayOff" width="64" height="64"/>
+        <image name="PlayOn" width="64" height="64"/>
+        <image name="RewindOff" width="64" height="64"/>
+        <image name="RewindOn" width="64" height="64"/>
+        <image name="Sio2OSX" width="128" height="128"/>
+        <image name="ToStartOff" width="64" height="64"/>
+        <image name="ToStartOn" width="64" height="64"/>
+        <image name="cassetteoff" width="42.75" height="30.75"/>
+    </resources>
+</document>

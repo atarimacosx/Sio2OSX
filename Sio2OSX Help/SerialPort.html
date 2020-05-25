@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  <title>Serial Port</title><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head>
+
+
+
+<body>
+
+
+
+
+
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td valign="top" width="20%"><img style="width: 108px; height: 136px;" src="x.png" alt="">
+
+      <br>
+
+
+
+
+
+      </td>
+
+
+
+
+
+      <td valign="top"><b><font size="+3">Sio2OSX
+
+Help<br>
+
+
+
+
+
+Serial Port</font></b><br>
+
+
+
+
+
+      <br>
+
+
+
+
+
+      <br>
+
+
+
+
+
+      <a href="index.html">Introduction</a>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="SerialPort.html">Serial Port</a>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="DiskDrives.html">Disk
+Drives</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="Cassettes.html">Cassettes</a>
+&nbsp; &nbsp; &nbsp; &nbsp; <a href="850Emulation.html">850 Emulation</a>
+
+<br>
+
+<a href="PrinterEmulation.html">Printer Emulation</a>
+
+&nbsp; &nbsp; <a href="preferences.html">Preferences</a>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="ReleaseHistory.html">Release History</a>
+
+&nbsp; &nbsp; <a href="Credits.html">Credits</a>
+
+
+
+
+
+      </td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+  
+
+  </tbody>
+
+</table>
+
+
+
+
+
+<br>
+
+
+
+
+
+<br>
+
+<br>
+
+Near the bottom center of the Sio2OSX program window is the serial port
+
+status. &nbsp;It will show which serial port is currently in use, and
+
+allow the user to chose an alternate one from the dropdown menu, if
+
+more than one USB serial adapter is installed. <br>
+
+<br>
+
+<img src="SerialPortStatus.png" alt="Atari800MacX Media Status Window" style="width: 218px; height: 97px;"><br>
+
+<br>
+
+If no serial ports are found on the system, the dropdown for the SIO
+
+Port will display "None". &nbsp;Note that if you start Sio2OSX without
+
+the USB Serial adapter plugged in, you may plug it in after startup,
+
+and the program will automatically recognize it and open that serial
+
+port. &nbsp;However, it is advised to not unplug the USB serial adpater
+
+while it is the active serial port for Sio2OSX, as this may cause your
+
+Macintosh to lock for 10-15 seconds. &nbsp;This is a function of the
+
+serial driver, and cannot be controlled by the Sio2OSX program.<br>
+
+<br>
+
+The SIO Speed display shows the current baud rate being used to
+
+communicate between the Atari and the Macintosh. &nbsp;This starts at
+
+19200 for any disk data transfers. &nbsp;In the General tab of
+
+Sio2OSX's Preferences, you are able to specify the maximum SIO baud
+
+rate, and this defaults to 57600, 3x. &nbsp;This is used by DOS's such
+
+as SpartaDOS and modified MyDos (APE Warp) to speed up data transfers.
+
+&nbsp;If you want to limit the maximum rate to 1x or 2x, you can do so
+
+by changing the preferences. &nbsp;Cassette transfers take place at 600
+
+baud, and the display will change to reflect this when you are playing
+
+a cassette tape image in Sio2OSX.<br>
+
+
+
+
+
+</body></html>

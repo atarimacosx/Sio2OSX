@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Sio2OSX' target in the 'Sio2OSX' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
