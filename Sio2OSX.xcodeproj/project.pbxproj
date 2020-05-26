@@ -37,6 +37,7 @@
 		2D5D56B4247C5D0600F6FEEF /* 850on.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D56B2247C5D0600F6FEEF /* 850on.png */; };
 		2D5D56B6247C783700F6FEEF /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D56B5247C783700F6FEEF /* lock.png */; };
 		2D5D56B8247C7B9E00F6FEEF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D56B7247C7B9D00F6FEEF /* Media.xcassets */; };
+		2D5D56BA247C9A0D00F6FEEF /* cassetteoff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D56B9247C9A0D00F6FEEF /* cassetteoff.png */; };
 		2D6DCEEF08FCCDFC00FDD389 /* Sio2OSX.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DCEEE08FCCDFC00FDD389 /* Sio2OSX.icns */; };
 		2DB776B8247C330700646F3F /* PrintOutputConfirm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB776B6247C330700646F3F /* PrintOutputConfirm.xib */; };
 		2DB776B9247C330700646F3F /* PrintOutput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB776B7247C330700646F3F /* PrintOutput.xib */; };
@@ -130,6 +131,7 @@
 		2D5D56B2247C5D0600F6FEEF /* 850on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 850on.png; sourceTree = "<group>"; };
 		2D5D56B5247C783700F6FEEF /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		2D5D56B7247C7B9D00F6FEEF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		2D5D56B9247C9A0D00F6FEEF /* cassetteoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cassetteoff.png; sourceTree = "<group>"; };
 		2D6DCEEE08FCCDFC00FDD389 /* Sio2OSX.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sio2OSX.icns; sourceTree = "<group>"; };
 		2DB776B3247B720400646F3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2DB776B6247C330700646F3F /* PrintOutputConfirm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PrintOutputConfirm.xib; path = ../../../../Volumes/markg/Sio2OSX/Sio2OSX/PrintOutputConfirm.xib; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				2D5D569F247C586A00F6FEEF /* atari810write.png */,
 				2D5D56A5247C598D00F6FEEF /* atari825.png */,
 				2D5D56A6247C598D00F6FEEF /* atari1020.png */,
+				2D5D56B9247C9A0D00F6FEEF /* cassetteoff.png */,
 				2D5D56AA247C59EB00F6FEEF /* diskette.png */,
 				2D5D56A9247C59EB00F6FEEF /* epson.png */,
 				2D2720DB0901A7A900DB4B91 /* FastForwardOff.png */,
@@ -406,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				2D5D56BA247C9A0D00F6FEEF /* cassetteoff.png in Resources */,
 				2DB776B9247C330700646F3F /* PrintOutput.xib in Resources */,
 				2D5D56B6247C783700F6FEEF /* lock.png in Resources */,
 				2D5D56AF247C5A4200F6FEEF /* text_dark.png in Resources */,
