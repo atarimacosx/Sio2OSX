@@ -270,7 +270,6 @@ static Preferences *sharedInstance = nil;
 * updateUI - Method to update the display, based on the stored values.
 *-----------------------------------------------------------------------------*/
 - (void)updateUI {
-	NSColor *pen1, *pen2, *pen3, *pen4;
 	int i,j,index, sioIndex;
 
     if (!prefTabView) return;	/* UI hasn't been loaded... */
@@ -296,26 +295,18 @@ static Preferences *sharedInstance = nil;
 	[atari1020FormLengthStepper setIntValue:[[displayedValues objectForKey:Atari1020FormLength] intValue]];
 	[atari1020AutoLinefeedButton setState:[[displayedValues objectForKey:Atari1020AutoLinefeed] boolValue] ? NSOnState : NSOffState];
 	[atari1020AutoPageAdjustButton setState:[[displayedValues objectForKey:Atari1020AutoPageAdjust] boolValue] ? NSOnState : NSOffState];
-	pen1 = [NSColor colorWithCalibratedRed:[[displayedValues objectForKey:Atari1020Pen1Red] floatValue] 
-						green:[[displayedValues objectForKey:Atari1020Pen1Green] floatValue] 
-						blue:[[displayedValues objectForKey:Atari1020Pen1Blue] floatValue]
-						alpha:[[displayedValues objectForKey:Atari1020Pen1Alpha] floatValue]];
-	[atari1020Pen1Pot setColor:pen1];
-	pen2 = [NSColor colorWithCalibratedRed:[[displayedValues objectForKey:Atari1020Pen2Red] floatValue] 
-						green:[[displayedValues objectForKey:Atari1020Pen2Green] floatValue] 
-						blue:[[displayedValues objectForKey:Atari1020Pen2Blue] floatValue]
-						alpha:[[displayedValues objectForKey:Atari1020Pen2Alpha] floatValue]];
-	[atari1020Pen2Pot setColor:pen2];
-	pen3 = [NSColor colorWithCalibratedRed:[[displayedValues objectForKey:Atari1020Pen3Red] floatValue] 
-						green:[[displayedValues objectForKey:Atari1020Pen3Green] floatValue] 
-						blue:[[displayedValues objectForKey:Atari1020Pen3Blue] floatValue]
-						alpha:[[displayedValues objectForKey:Atari1020Pen3Alpha] floatValue]];
-	[atari1020Pen3Pot setColor:pen3];
-	pen4 = [NSColor colorWithCalibratedRed:[[displayedValues objectForKey:Atari1020Pen4Red] floatValue] 
-						green:[[displayedValues objectForKey:Atari1020Pen4Green] floatValue] 
-						blue:[[displayedValues objectForKey:Atari1020Pen4Blue] floatValue]
-						alpha:[[displayedValues objectForKey:Atari1020Pen4Alpha] floatValue]];
-	[atari1020Pen4Pot setColor:pen4];
+    [atari1020Pen1Red setIntValue:[[displayedValues objectForKey:Atari1020Pen1Red] floatValue]*255];
+    [atari1020Pen1Green setIntValue:[[displayedValues objectForKey:Atari1020Pen1Green] floatValue]*255];
+    [atari1020Pen1Blue setIntValue:[[displayedValues objectForKey:Atari1020Pen1Blue] floatValue]*255];
+    [atari1020Pen2Red setIntValue:[[displayedValues objectForKey:Atari1020Pen2Red] floatValue]*255];
+    [atari1020Pen2Green setIntValue:[[displayedValues objectForKey:Atari1020Pen2Green] floatValue]*255];
+    [atari1020Pen2Blue setIntValue:[[displayedValues objectForKey:Atari1020Pen2Blue] floatValue]*255];
+    [atari1020Pen3Red setIntValue:[[displayedValues objectForKey:Atari1020Pen3Red] floatValue]*255];
+    [atari1020Pen3Green setIntValue:[[displayedValues objectForKey:Atari1020Pen3Green] floatValue]*255];
+    [atari1020Pen3Blue setIntValue:[[displayedValues objectForKey:Atari1020Pen3Blue] floatValue]*255];
+    [atari1020Pen4Red setIntValue:[[displayedValues objectForKey:Atari1020Pen4Red] floatValue]*255];
+    [atari1020Pen4Green setIntValue:[[displayedValues objectForKey:Atari1020Pen4Green] floatValue]*255];
+    [atari1020Pen4Blue setIntValue:[[displayedValues objectForKey:Atari1020Pen4Blue] floatValue]*255];
 	[epsonCharSetPulldown selectItemAtIndex:[[displayedValues objectForKey:EpsonCharSet] intValue]];
 	[epsonPrintPitchPulldown selectItemAtIndex:[[displayedValues objectForKey:EpsonPrintPitch] intValue]];
 	[epsonPrintWeightPulldown selectItemAtIndex:[[displayedValues objectForKey:EpsonPrintWeight] intValue]];
@@ -470,7 +461,6 @@ static Preferences *sharedInstance = nil;
 *-----------------------------------------------------------------------------*/
 - (void)miscChanged:(id)sender {
     int anInt;
-	NSColor *penColor;
 	float penRed, penBlue, penGreen, penAlpha;
     
     static NSNumber *yes = nil;
@@ -631,31 +621,31 @@ static Preferences *sharedInstance = nil;
             [displayedValues setObject:one forKey:Atari1020PrintWidth];
             break;
 		}
-	penColor = [atari1020Pen1Pot color];
-	[penColor getRed:&penRed green:&penGreen blue:&penBlue alpha:&penAlpha];
-	[displayedValues setObject:[NSNumber numberWithFloat:penRed] forKey:Atari1020Pen1Red];
-	[displayedValues setObject:[NSNumber numberWithFloat:penBlue] forKey:Atari1020Pen1Blue];
-	[displayedValues setObject:[NSNumber numberWithFloat:penGreen] forKey:Atari1020Pen1Green];
-	[displayedValues setObject:[NSNumber numberWithFloat:penAlpha] forKey:Atari1020Pen1Alpha];
-	penColor = [atari1020Pen2Pot color];
-	[penColor getRed:&penRed green:&penGreen blue:&penBlue alpha:&penAlpha];
-	[displayedValues setObject:[NSNumber numberWithFloat:penRed] forKey:Atari1020Pen2Red];
-	[displayedValues setObject:[NSNumber numberWithFloat:penBlue] forKey:Atari1020Pen2Blue];
-	[displayedValues setObject:[NSNumber numberWithFloat:penGreen] forKey:Atari1020Pen2Green];
-	[displayedValues setObject:[NSNumber numberWithFloat:penAlpha] forKey:Atari1020Pen2Alpha];
-	penColor = [atari1020Pen3Pot color];
-	[penColor getRed:&penRed green:&penGreen blue:&penBlue alpha:&penAlpha];
-	[displayedValues setObject:[NSNumber numberWithFloat:penRed] forKey:Atari1020Pen3Red];
-	[displayedValues setObject:[NSNumber numberWithFloat:penBlue] forKey:Atari1020Pen3Blue];
-	[displayedValues setObject:[NSNumber numberWithFloat:penGreen] forKey:Atari1020Pen3Green];
-	[displayedValues setObject:[NSNumber numberWithFloat:penAlpha] forKey:Atari1020Pen3Alpha];
-	penColor = [atari1020Pen4Pot color];
-	[penColor getRed:&penRed green:&penGreen blue:&penBlue alpha:&penAlpha];
-	[displayedValues setObject:[NSNumber numberWithFloat:penRed] forKey:Atari1020Pen4Red];
-	[displayedValues setObject:[NSNumber numberWithFloat:penBlue] forKey:Atari1020Pen4Blue];
-	[displayedValues setObject:[NSNumber numberWithFloat:penGreen] forKey:Atari1020Pen4Green];
-	[displayedValues setObject:[NSNumber numberWithFloat:penAlpha] forKey:Atari1020Pen4Alpha];
-	
+    penRed = ((float) [atari1020Pen1Red intValue])/255.0;
+    penGreen = ((float) [atari1020Pen1Green intValue])/255.0;
+    penBlue = ((float) [atari1020Pen1Blue intValue])/255.0;
+    [displayedValues setObject:[NSNumber numberWithFloat:penRed] forKey:Atari1020Pen1Red];
+    [displayedValues setObject:[NSNumber numberWithFloat:penBlue] forKey:Atari1020Pen1Blue];
+    [displayedValues setObject:[NSNumber numberWithFloat:penGreen] forKey:Atari1020Pen1Green];
+    penRed = ((float) [atari1020Pen2Red intValue])/255.0;
+    penGreen = ((float) [atari1020Pen2Green intValue])/255.0;
+    penBlue = ((float) [atari1020Pen2Blue intValue])/255.0;
+    [displayedValues setObject:[NSNumber numberWithFloat:penRed] forKey:Atari1020Pen2Red];
+    [displayedValues setObject:[NSNumber numberWithFloat:penBlue] forKey:Atari1020Pen2Blue];
+    [displayedValues setObject:[NSNumber numberWithFloat:penGreen] forKey:Atari1020Pen2Green];
+    penRed = ((float) [atari1020Pen3Red intValue])/255.0;
+    penGreen = ((float) [atari1020Pen3Green intValue])/255.0;
+    penBlue = ((float) [atari1020Pen3Blue intValue])/255.0;
+    [displayedValues setObject:[NSNumber numberWithFloat:penRed] forKey:Atari1020Pen3Red];
+    [displayedValues setObject:[NSNumber numberWithFloat:penBlue] forKey:Atari1020Pen3Blue];
+    [displayedValues setObject:[NSNumber numberWithFloat:penGreen] forKey:Atari1020Pen3Green];
+    penRed = ((float) [atari1020Pen4Red intValue])/255.0;
+    penGreen = ((float) [atari1020Pen4Green intValue])/255.0;
+    penBlue = ((float) [atari1020Pen4Blue intValue])/255.0;
+    [displayedValues setObject:[NSNumber numberWithFloat:penRed] forKey:Atari1020Pen4Red];
+    [displayedValues setObject:[NSNumber numberWithFloat:penBlue] forKey:Atari1020Pen4Blue];
+    [displayedValues setObject:[NSNumber numberWithFloat:penGreen] forKey:Atari1020Pen4Green];
+
     switch([epsonCharSetPulldown indexOfSelectedItem]) {
         case 0:
 		default:
