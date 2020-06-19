@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="101000" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="278" id="279"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="MainMenu" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="Sio2OSX" id="56">
+                    <menu key="submenu" title="Sio2OSX" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About Sio2OSX" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showPanel:" target="322" id="323"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="196">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="showPanel:" target="280" id="281"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Enter Registration Code..." id="405">
+                                <connections>
+                                    <action selector="registration:" target="282" id="406"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide NewApplication" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-2" id="152"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-2" id="146"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-2" id="153"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit Sio2OSX" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="139"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="327">
+                    <menu key="submenu" title="Edit" id="328">
+                        <items>
+                            <menuItem title="Undo" keyEquivalent="z" id="329">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="361"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="337">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="362"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="341">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Cut" keyEquivalent="x" id="338">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="354"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="350">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="363"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="336">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="353"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" id="349">
+                                <connections>
+                                    <action selector="delete:" target="-1" id="351"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="330">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="357"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Disks" id="206">
+                    <menu key="submenu" title="Disks" id="207">
+                        <items>
+                            <menuItem title="Insert Floppy or Sharepoint" id="231">
+                                <menu key="submenu" title="Insert Floppy or Sharepoint" id="232">
+                                    <items>
+                                        <menuItem title="D1:..." tag="1" keyEquivalent="1" id="234">
+                                            <connections>
+                                                <action selector="diskInsert:" target="282" id="287"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D2:..." tag="2" keyEquivalent="2" id="235">
+                                            <connections>
+                                                <action selector="diskInsert:" target="282" id="288"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D3:..." tag="3" keyEquivalent="3" id="237">
+                                            <connections>
+                                                <action selector="diskInsert:" target="282" id="289"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D4:..." tag="4" keyEquivalent="4" id="239">
+                                            <connections>
+                                                <action selector="diskInsert:" target="282" id="290"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D5:..." tag="5" keyEquivalent="5" id="236">
+                                            <connections>
+                                                <action selector="diskInsert:" target="282" id="291"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D6:..." tag="6" keyEquivalent="6" id="233">
+                                            <connections>
+                                                <action selector="diskInsert:" target="282" id="292"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D7:..." tag="7" keyEquivalent="7" id="238">
+                                            <connections>
+                                                <action selector="diskInsert:" target="282" id="293"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D8:..." tag="8" keyEquivalent="8" id="240">
+                                            <connections>
+                                                <action selector="diskInsert:" target="282" id="294"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Remove Floppy or Sharepoint" id="208">
+                                <menu key="submenu" title="Remove Floppy or Sharepoint" id="209">
+                                    <items>
+                                        <menuItem title="All" keyEquivalent="0" id="213">
+                                            <connections>
+                                                <action selector="diskRemoveAll:" target="282" id="303"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="217">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </menuItem>
+                                        <menuItem title="D1:" tag="1" keyEquivalent="1" id="219">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="diskRemove:" target="282" id="295"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D2:" tag="2" keyEquivalent="2" id="216">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="diskRemove:" target="282" id="296"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D3:" tag="3" keyEquivalent="3" id="210">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="diskRemove:" target="282" id="297"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D4:" tag="4" keyEquivalent="4" id="212">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="diskRemove:" target="282" id="298"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D5:" tag="5" keyEquivalent="5" id="214">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="diskRemove:" target="282" id="299"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D6:" tag="6" keyEquivalent="6" id="215">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="diskRemove:" target="282" id="300"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D7:" tag="7" keyEquivalent="7" id="218">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="diskRemove:" target="282" id="301"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="D8:" tag="8" keyEquivalent="8" id="211">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="diskRemove:" target="282" id="302"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Rotate Floppies" id="230">
+                                <connections>
+                                    <action selector="diskRotate:" target="282" id="284"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Load Disk Set" keyEquivalent="o" id="367">
+                                <connections>
+                                    <action selector="diskSetLoad:" target="282" id="369"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save Disk Set" keyEquivalent="s" id="368">
+                                <connections>
+                                    <action selector="diskSetSave:" target="282" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="New Floppy Image..." keyEquivalent="n" id="221">
+                                <connections>
+                                    <action selector="showCreatePanel:" target="282" id="283"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Cassette" id="382">
+                    <menu key="submenu" title="Cassette" id="383">
+                        <items>
+                            <menuItem title="Play Cassette File..." id="395">
+                                <connections>
+                                    <action selector="cassStart:" target="282" id="404"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Printer" id="242">
+                    <menu key="submenu" title="Printer" id="243">
+                        <items>
+                            <menuItem title="Select Printer" id="258">
+                                <menu key="submenu" title="Select Printer" id="259">
+                                    <items>
+                                        <menuItem title="Text" id="263">
+                                            <connections>
+                                                <action selector="onSelectPrinter:" target="285" id="305"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Atari 825" tag="1" id="261">
+                                            <connections>
+                                                <action selector="onSelectPrinter:" target="285" id="306"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Atari 1020" tag="2" id="262">
+                                            <connections>
+                                                <action selector="onSelectPrinter:" target="285" id="307"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Epson FX-80" tag="3" id="264">
+                                            <connections>
+                                                <action selector="onSelectPrinter:" target="285" id="308"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="265">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </menuItem>
+                                        <menuItem title="Reset Printer" id="260">
+                                            <connections>
+                                                <action selector="onResetPrinter:" target="285" id="304"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Preview Printer Output" id="277">
+                                <connections>
+                                    <action selector="showPrinterOutput:" target="285" id="286"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="19">
+                    <menu key="submenu" title="Window" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="23">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="37"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="197">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="198"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bring All to Front" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="103">
+                    <menu key="submenu" title="Help" id="106">
+                        <items>
+                            <menuItem title="Sio2OSX Help" keyEquivalent="?" id="111">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="122"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="278" userLabel="SioMain" customClass="SioMain"/>
+        <customObject id="280" userLabel="Preferences" customClass="Preferences"/>
+        <customObject id="282" userLabel="MediaManager" customClass="MediaManager">
+            <connections>
+                <outlet property="printerPreviewItem" destination="277" id="310"/>
+                <outlet property="removeD1Item" destination="219" id="318"/>
+                <outlet property="removeD2Item" destination="216" id="317"/>
+                <outlet property="removeD3Item" destination="210" id="316"/>
+                <outlet property="removeD4Item" destination="212" id="315"/>
+                <outlet property="removeD5Item" destination="214" id="314"/>
+                <outlet property="removeD6Item" destination="215" id="313"/>
+                <outlet property="removeD7Item" destination="218" id="312"/>
+                <outlet property="removeD8Item" destination="211" id="311"/>
+                <outlet property="removeMenu" destination="213" id="321"/>
+                <outlet property="resetPrinterMenuItem" destination="260" id="309"/>
+            </connections>
+        </customObject>
+        <customObject id="285" userLabel="PrintOutputController" customClass="PrintOutputController"/>
+        <customObject id="322" userLabel="AboutBox" customClass="AboutBox"/>
+    </objects>
+</document>
